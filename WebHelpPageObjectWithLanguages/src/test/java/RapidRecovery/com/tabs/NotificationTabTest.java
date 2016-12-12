@@ -17,7 +17,7 @@ public class NotificationTabTest extends BaseTabTest {
     @org.testng.annotations.Test
     public void notificationsWebHelp() {
         notificationsTab.openAddNotificationGroupWindow();
-        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK, WebHelpPage.TEXT_NOTIFICATIONS);
+        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK, webHelpPage.getLocalizedText(WebHelpPage.TEXT_NOTIFICATIONS));
         notificationsTab.closeDialogWindow();
     }
 
@@ -25,14 +25,14 @@ public class NotificationTabTest extends BaseTabTest {
     @org.testng.annotations.Test
     public void editNotificationGroupWebHelp() {
         notificationsTab.openEditNotificationGropWindow();
-        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK,WebHelpPage.TEXT_NOTIFICATIONS);
+        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.getLocalizedText(WebHelpPage.TEXT_NOTIFICATIONS));
         notificationsTab.closeDialogWindow();
     }
 
     @org.testng.annotations.Test
-    public void configureEmailTemlateWebHelp() {
+    public void configureEmailTemplateWebHelp() {
         notificationsTab.openEditEmailNotificationsConfigWindow();
-        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK,WebHelpPage.TEXT_CONFIGURE_EMAIL_TEMPLATE);
+        notificationsTab.checkWebHelp(NotificationsTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.getLocalizedText(WebHelpPage.TEXT_CONFIGURE_EMAIL_TEMPLATE));
         notificationsTab.closeDialogWindow();
     }
 

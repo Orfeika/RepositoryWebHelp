@@ -15,12 +15,12 @@ public class EncryptionKeysTabTestTab extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void encryptionKeyWebHelp() {
-        encryptionKeyTab.checkWebHelp(EncryptionKeyTab.CSS_HELP_ENCRYPION_KEY, WebHelpPage.TEXT_ENCRYPTION_KEY);
+        encryptionKeyTab.checkWebHelp(EncryptionKeyTab.CSS_HELP_ENCRYPION_KEY, webHelpPage.getLocalizedText(WebHelpPage.TEXT_ENCRYPTION_KEY));
     }
     @org.testng.annotations.Test
     public void addEncryptionKeyWebHelp() {
         encryptionKeyTab.openAddEncryptionKeyWindow();
-        encryptionKeyTab.checkWebHelp(EncryptionKeyTab.CSS_DIALOG_WINDOW_QUESTION_MARK,WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY);
+        encryptionKeyTab.checkWebHelp(EncryptionKeyTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.getLocalizedText(WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY));
         encryptionKeyTab.closeDialogWindow();
 
     }

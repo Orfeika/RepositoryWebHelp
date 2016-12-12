@@ -16,6 +16,6 @@ public class VirtualStandbyTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void coreSummaryWebHelp() {
-        tab.checkWebHelp(BaseTab.CSS_SUMMARY_HELP, WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD);
+        tab.checkWebHelp(BaseTab.CSS_SUMMARY_HELP,  webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD));
     }
 }

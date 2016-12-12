@@ -15,7 +15,7 @@ public class SystemInfoTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void systemInfoHelp() {
-        tab.checkWebHelp(CSS_SUMMARY_HELP, WebHelpPage.TEXT_SYSTEM_INFO);
+        tab.checkWebHelp(CSS_SUMMARY_HELP,  webHelpPage.getLocalizedText(WebHelpPage.TEXT_SYSTEM_INFO));
     }
 
 

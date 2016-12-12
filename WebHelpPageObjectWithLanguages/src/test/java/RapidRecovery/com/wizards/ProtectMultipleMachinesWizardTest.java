@@ -115,7 +115,7 @@ public void repositoryConfigurationStep() {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD_ENCRYPTION, WebHelpPage.TEXT_ENCRYPTION);
+                WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY, WebHelpPage.TEXT_ENCRYPTION);
 
     }
 

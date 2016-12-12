@@ -10,6 +10,6 @@ public class CoreLogsTest extends BaseTabTest {
     }
       @org.testng.annotations.Test
     public void coreLogsWebHelp() {
-          coreLogsTab.checkWebHelp(CoreLogsTab.CSS_HELP_CORE_LOGS, WebHelpPage.TEXT_DOWNLOAD_CORE_LOGS);
+          coreLogsTab.checkWebHelp(CoreLogsTab.CSS_HELP_CORE_LOGS, webHelpPage.getLocalizedText(WebHelpPage.TEXT_DOWNLOAD_CORE_LOGS));
     }
 }

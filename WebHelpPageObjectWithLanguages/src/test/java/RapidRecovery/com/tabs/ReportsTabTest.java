@@ -16,19 +16,19 @@ public class ReportsTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void jobReportWebHelp() {
-        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS, WebHelpPage.TEXT_JOB_REPORT);
+        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS, webHelpPage.getLocalizedText(WebHelpPage.TEXT_JOB_REPORT));
     }
 
     @org.testng.annotations.Test
     public void summaryReportWebHelp() {
         reportsTab.selectSummaryReport();
-        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS,WebHelpPage.TEXT_SUMMARY_REPORT);
+        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS,webHelpPage.getLocalizedText(WebHelpPage.TEXT_SUMMARY_REPORT));
     }
 
     @org.testng.annotations.Test
     public void failureReportWebHelp() {
         reportsTab.selectFailureReport();
-        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS,WebHelpPage.TEXT_FAILURE_REPORT);
+        reportsTab.checkWebHelp(ReportsTab.CSS_HELP_REPORTS,webHelpPage.getLocalizedText(WebHelpPage.TEXT_FAILURE_REPORT));
     }
 
 

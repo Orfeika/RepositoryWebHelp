@@ -3,7 +3,7 @@
 <suite name="WebHelpSuite" verbose="1" >
   <test name="CheckWebHelp"   >
     <packages>
-      <package name="RapidRecovery.com.wizards" />
+    <!--<package name="RapidRecovery.com.wizards" />-->
         <package name="RapidRecovery.com.tabs" />
    </packages>
  </test>

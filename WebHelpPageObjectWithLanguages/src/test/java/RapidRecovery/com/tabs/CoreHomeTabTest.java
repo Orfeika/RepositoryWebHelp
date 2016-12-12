@@ -17,13 +17,13 @@ public class CoreHomeTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void coreSummaryWebHelp() {
-        coreHomeTab.checkWebHelp(CoreHomeTab.CSS_SUMMARY_HELP, WebHelpPage.TEXT_SUMMARY_TAB);
+        coreHomeTab.checkWebHelp(CoreHomeTab.CSS_SUMMARY_HELP, webHelpPage.getLocalizedText(WebHelpPage.TEXT_SUMMARY_TAB));
     }
 
     @org.testng.annotations.Test
     public void coreHelpMenu() {
         coreHomeTab.openHelpDropdown();
-        coreHomeTab.checkWebHelp(CoreHomeTab.CSS_HELP_MENU_HELP,WebHelpPage.TEXT_INTRODUCTION);
+        coreHomeTab.checkWebHelp(CoreHomeTab.CSS_HELP_MENU_HELP,webHelpPage.getLocalizedText(WebHelpPage.TEXT_INTRODUCTION));
     }
 
 

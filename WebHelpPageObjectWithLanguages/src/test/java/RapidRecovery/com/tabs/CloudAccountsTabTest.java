@@ -16,7 +16,7 @@ public class CloudAccountsTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void cloudAccountWebHelp() {
-        cloudTab.checkWebHelp(CloudAccountsTab.CSS_HELP_CLOUDS, WebHelpPage.TEXT_CLOUD_ACCOUNTS);
+        cloudTab.checkWebHelp(CloudAccountsTab.CSS_HELP_CLOUDS, webHelpPage.getLocalizedText(WebHelpPage.TEXT_CLOUD_ACCOUNTS));
     }
 
 

@@ -1,7 +1,8 @@
 package RapidRecovery.com.tabs;
 
-import RapidRecovery.com.PageObject.tabs.*;
 import RapidRecovery.com.PageObject.PageObject;
+import RapidRecovery.com.PageObject.tabs.*;
+import RapidRecovery.com.WebHelpPage;
 import RapidRecovery.com.util.ConfigurationFileLoader;
 import RapidRecovery.com.util.DriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class BaseTabTest {
+    protected WebHelpPage webHelpPage;
     WebDriver driver;
     ConfigurationFileLoader configurations;
     PageObject pageObject;
@@ -36,8 +38,10 @@ public class BaseTabTest {
 
 
 
+
     @BeforeClass
     public void beforeClass() {
+
         driver = DriverManager.getInstance().createDriver();
         configurations = ConfigurationFileLoader.getInstance();
         driver.manage().window().maximize();

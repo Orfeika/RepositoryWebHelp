@@ -15,11 +15,11 @@ public class MountsTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void localMountWebHelp() {
-        mountsTab.checkWebHelp(MountsTab.CSS_lOCAL_MOUNTS, WebHelpPage.TEXT_DISMOUNTING_RP);
+        mountsTab.checkWebHelp(MountsTab.CSS_lOCAL_MOUNTS, webHelpPage.getLocalizedText(WebHelpPage.TEXT_DISMOUNTING_RP));
     }
     @org.testng.annotations.Test
     public void remoteMountWebHelp() {
-        mountsTab.checkWebHelp(MountsTab.CSS_REMOTE_MOUNTS,WebHelpPage.TEXT_DISMOUNTING_RP);
+        mountsTab.checkWebHelp(MountsTab.CSS_REMOTE_MOUNTS,webHelpPage.getLocalizedText(WebHelpPage.TEXT_DISMOUNTING_RP));
     }
 
 }

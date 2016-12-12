@@ -16,6 +16,6 @@ public class EventsTabTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void coreSummaryWebHelp() {
-        tab.checkWebHelp(BaseTab.CSS_SUMMARY_HELP, WebHelpPage.TEXT_EVENTS);
+        tab.checkWebHelp(BaseTab.CSS_SUMMARY_HELP, webHelpPage.getLocalizedText(WebHelpPage.TEXT_EVENTS));
     }
 }

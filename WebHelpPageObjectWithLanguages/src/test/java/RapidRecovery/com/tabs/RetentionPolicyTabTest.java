@@ -15,7 +15,7 @@ public class RetentionPolicyTabTest extends BaseTabTest {
 
      @org.testng.annotations.Test
     public void retentionPolicyWebHelp() {
-                retentionPolicyTabTab.checkWebHelp(RetentionPolicyTab.CSS_HELP_RETENTION_POLICY, WebHelpPage.TEXT_CORE_RETENTION_POLICY);
+                retentionPolicyTabTab.checkWebHelp(RetentionPolicyTab.CSS_HELP_RETENTION_POLICY, webHelpPage.getLocalizedText(WebHelpPage.TEXT_CORE_RETENTION_POLICY));
     }
 
 

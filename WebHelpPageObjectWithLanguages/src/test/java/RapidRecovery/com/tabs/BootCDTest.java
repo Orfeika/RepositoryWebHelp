@@ -15,13 +15,13 @@ public class BootCDTest extends BaseTabTest {
 
     @org.testng.annotations.Test
     public void bootCDHelp() {
-        bootCDTab.checkWebHelp(BootCDTab.CSS_HELP_BOOT_CD, WebHelpPage.TEXT_CREATING_BOOT_CD);
+        bootCDTab.checkWebHelp(BootCDTab.CSS_HELP_BOOT_CD, webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATING_BOOT_CD));
     }
 
     @org.testng.annotations.Test
     public void addNewBootCDHelp() {
         bootCDTab.openCreateBootCDWindow();
-        bootCDTab.checkWebHelp(BootCDTab.CSS_DIALOG_WINDOW_QUESTION_MARK,WebHelpPage.TEXT_CREATING_BOOT_CD);
+        bootCDTab.checkWebHelp(BootCDTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATING_BOOT_CD));
         bootCDTab.closeDialogWindow();
     }
 

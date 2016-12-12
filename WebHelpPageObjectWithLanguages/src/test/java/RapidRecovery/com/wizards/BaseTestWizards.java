@@ -12,7 +12,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -24,6 +23,7 @@ public class BaseTestWizards {
     ProtectMachineWizard protectMachineWizard;
     RestoreWizard restoreWizard;
     ReplicationWizard replicationWizard;
+
 
 
 

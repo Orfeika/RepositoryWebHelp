@@ -1,5 +1,6 @@
 package RapidRecovery.com.PageObject;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
 import RapidRecovery.com.util.ConfigurationFileLoader;
@@ -8,7 +9,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class PageObject {
     protected WebDriver driver = DriverManager.getInstance().getDriver();
     protected WebDriverWait wait ;
+    private LocalizedLanguages languages;
 
     public static final String CSS_LOADING = "#loadingPanel";
 
@@ -25,6 +26,19 @@ public class PageObject {
         PageFactory.initElements(driver, this);
          wait = new WebDriverWait(driver, 15, 250);
     }
+
+
+
+    public void changeLang(LocalizedLanguages languages ){
+        languages = this.languages;
+        driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
+        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
+        driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
+        driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >"+ languages.getLanguageCss() +"> label")).click();
+        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
+        driver.navigate().refresh();
+    }
+
 
     public String generateURL(ConfigurationFileLoader configurations){
 
@@ -112,5 +126,7 @@ public class PageObject {
 /// Switch back to original browser (first window)
         driver.switchTo().window(winHandleBefore);
     }
+
+
 
 }
