@@ -1,0 +1,122 @@
+package RapidRecovery.com.wizards;
+
+
+import RapidRecovery.com.PageObject.PageObject;
+import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
+import RapidRecovery.com.WebHelpPage;
+
+import org.testng.annotations.BeforeMethod;
+
+
+public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
+
+    @BeforeMethod
+    public void beforeMethod() {
+        protectMachineWizard = new ProtectMachineWizard();
+    }
+
+    @org.testng.annotations.Test
+    public void welcomeStep() {
+        protectMachineWizard.launchProtectMultipleMachinesWizard();
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD, WebHelpPage.TEXT_WELCOME);
+
+
+    }
+
+    @org.testng.annotations.Test
+    public void connectionStep() {
+        protectMachineWizard.launchProtectMultipleMachinesWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD,WebHelpPage.TEXT_CONNECTION);
+
+    }
+
+ @org.testng.annotations.Test
+   public void selectMachineStep() {
+     protectMachineWizard.launchProtectMultipleMachinesWizard();
+     protectMachineWizard.selectAdvancedProtectMachinesWizard();
+     protectMachineWizard.proceedToNextStep();
+     protectMachineWizard.selectConnectionManually();
+     protectMachineWizard.proceedToNextStep();
+     protectMachineWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD,WebHelpPage.TEXT_SELECT_MACHINES );
+
+ }
+    @org.testng.annotations.Test
+    public void protectionStep() {
+        protectMachineWizard.launchProtectMultipleMachinesWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.selectConnectionManually();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.enterMachinesInformation();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_WIZARD_PROTECTION, WebHelpPage.TEXT_PROTECTION);
+    }
+
+   @org.testng.annotations.Test
+    public void protectionScheduleStep() {
+       protectMachineWizard.launchProtectMultipleMachinesWizard();
+       protectMachineWizard.selectAdvancedProtectMachinesWizard();
+       protectMachineWizard.proceedToNextStep();
+       protectMachineWizard.selectConnectionManually();
+       protectMachineWizard.proceedToNextStep();
+       protectMachineWizard.enterMachinesInformation();
+       protectMachineWizard.proceedToNextStep();
+       protectMachineWizard.setCustomProtection();
+       protectMachineWizard.proceedToNextStep();
+       protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+               WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE,WebHelpPage.TEXT_PROTECTION_SCHEDULE);
+
+   }
+
+      @org.testng.annotations.Test
+ public void repositoryStep() {
+          protectMachineWizard.launchProtectMultipleMachinesWizard();
+          protectMachineWizard.selectAdvancedProtectMachinesWizard();
+          protectMachineWizard.proceedToNextStep();
+          protectMachineWizard.selectConnectionManually();
+          protectMachineWizard.proceedToNextStep();
+          protectMachineWizard.enterMachinesInformation();
+          protectMachineWizard.proceedToNextStep();
+          protectMachineWizard.proceedToNextStep();
+          protectMachineWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+                  WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY);
+
+
+      }
+
+    @org.testng.annotations.Test
+public void repositoryConfigurationStep() {
+        protectMachineWizard.launchProtectMultipleMachinesWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.selectConnectionManually();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.enterMachinesInformation();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.createNewRepository();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(PageObject.CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.
+                TEXT_CREATE_REPOSITORY, WebHelpPage.TEXT_REPOSITORY_CONFIGURATION);
+    }
+
+    @org.testng.annotations.Test
+   public void encryptionStep() {
+        protectMachineWizard.launchProtectMultipleMachinesWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.selectConnectionManually();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.enterMachinesInformation();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD_ENCRYPTION, WebHelpPage.TEXT_ENCRYPTION);
+
+    }
+
+}

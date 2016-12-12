@@ -1,0 +1,131 @@
+package RapidRecovery.com.wizards;
+
+import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
+import RapidRecovery.com.WebHelpPage;
+import org.testng.annotations.BeforeMethod;
+
+import static RapidRecovery.com.PageObject.PageObject.CSS_LOADING;
+import static RapidRecovery.com.PageObject.wizards.BaseWizard.CSS_WIZARD_QUESTION_MARK;
+
+public class ProtectMachineWizardTest extends BaseTestWizards {
+
+    @BeforeMethod
+    public void beforeMethod() {
+        protectMachineWizard = new ProtectMachineWizard();
+    }
+
+    @org.testng.annotations.Test
+    public void welcomeStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_WELCOME);
+        protectMachineWizard.closeWizard();
+    }
+
+    @org.testng.annotations.Test
+    public void connectionStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_CONNECTION);
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+    public void protectionStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD_PROTECTION,WebHelpPage.TEXT_PROTECTION);
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+
+    public void volumesStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.setCustomProtection();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_PROTECTION_VOLUMES);
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+    public void scheduleStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.setCustomProtection();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE,WebHelpPage.TEXT_PROTECTION_SCHEDULE);
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+    public void repositoryStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY);
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+    public void repositoryConfigurationStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.createNewRepository();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY_CONFIGURATION );
+        protectMachineWizard.closeWizard();
+
+    }
+
+    @org.testng.annotations.Test
+    public void encryptionStep() {
+        protectMachineWizard.launchProtectMachineWizard();
+        protectMachineWizard.selectAdvancedProtectMachinesWizard();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.fillConnectionFields();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.proceedToNextStep();
+        protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
+        protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
+                WebHelpPage.TEXT_PRT_WIZARD_ENCRYPTION, WebHelpPage.TEXT_ENCRYPTION);
+        protectMachineWizard.closeWizard();
+
+
+    }
+
+
+}
