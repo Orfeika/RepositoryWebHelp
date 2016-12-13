@@ -1,15 +1,14 @@
 package RapidRecovery.com.tabs;
 
 import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
-import RapidRecovery.com.PageObject.tabs.BootCDTab;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
+import RapidRecovery.com.PageObject.tabs.BootCDTab;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
-public class BootCDTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+public class BootCDTabTest extends BaseTabTest {
 
-    public BootCDTest(LocalizedLanguages language) {
+    public BootCDTabTest(LocalizedLanguages language) {
         this.language = language;
     }
 

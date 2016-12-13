@@ -8,7 +8,7 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class CoreHomeTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public CoreHomeTabTest(LocalizedLanguages language) {
         this.language = language;

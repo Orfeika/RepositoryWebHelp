@@ -6,7 +6,6 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class EventsTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
 
     public EventsTabTest(LocalizedLanguages language) {
         this.language = language;

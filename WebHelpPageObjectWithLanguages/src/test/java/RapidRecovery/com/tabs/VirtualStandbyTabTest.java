@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import static RapidRecovery.com.PageObject.tabs.BaseTab.Tabs.VirtualStandbyTab;
 
 public class VirtualStandbyTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
 
     public VirtualStandbyTabTest(LocalizedLanguages language) {
         this.language = language;

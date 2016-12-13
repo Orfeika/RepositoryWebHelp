@@ -1,12 +1,11 @@
 package RapidRecovery.com.PageObject;
 
-import RapidRecovery.com.PageObject.tabs.SettingsTab;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
 import RapidRecovery.com.util.ConfigurationFileLoader;
 import RapidRecovery.com.util.DriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,24 +14,16 @@ import java.util.concurrent.TimeUnit;
 
 
 public class PageObject {
-    protected SettingsTab settingsTab;
+
+
     protected WebDriver driver = DriverManager.getInstance().getDriver();
     protected WebDriverWait wait ;
     public static final String CSS_OVERLAY = "div .ui-widget-overlay";
-
-
     public static final String CSS_LOADING = "#loadingPanel";
 
-
-
     public PageObject() {
-        PageFactory.initElements(driver, this);
-         wait = new WebDriverWait(driver, 15, 250);
+        driver.get(generateURL(ConfigurationFileLoader.getInstance()));
     }
-
-
-
-
 
     public String generateURL(ConfigurationFileLoader configurations){
 
@@ -119,6 +110,16 @@ public class PageObject {
         }
 /// Switch back to original browser (first window)
         driver.switchTo().window(winHandleBefore);
+    }
+    public void changeLang(LocalizedLanguages languages ){
+        waitTillProgress(CSS_OVERLAY,10,20);
+        driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
+        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
+        driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
+        driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >"+ languages.getLanguageCss() +"> label")).click();
+        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
+        driver.navigate().refresh();
+        driver.navigate().refresh();
     }
 
 

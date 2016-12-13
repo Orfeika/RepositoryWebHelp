@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class ArchivesTabTest extends BaseTabTest {
-    private LocalizedLanguages language;
+
 
     public ArchivesTabTest(LocalizedLanguages language) {
         this.language = language;
@@ -30,6 +30,7 @@ public class ArchivesTabTest extends BaseTabTest {
     }
     @BeforeMethod
     public void beforeMethod() {
+        webHelpPage = new WebHelpPage(language.getLanguageKey());
         archivesTab.openTab(BaseTab.Tabs.ArchiveTab);
     }
 

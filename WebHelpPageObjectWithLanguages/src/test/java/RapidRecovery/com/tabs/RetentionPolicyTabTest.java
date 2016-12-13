@@ -7,7 +7,7 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class RetentionPolicyTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public RetentionPolicyTabTest(LocalizedLanguages language) {
         this.language = language;

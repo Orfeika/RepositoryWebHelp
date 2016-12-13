@@ -8,7 +8,7 @@ import RapidRecovery.com.util.IncomingReplicationException;
 import org.testng.annotations.BeforeMethod;
 
 public class ReplicationTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public ReplicationTabTest(LocalizedLanguages language) {
         this.language = language;

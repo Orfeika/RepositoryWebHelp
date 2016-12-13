@@ -6,14 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-/**
- * Created by 1 on 11/16/2016.
- */
 public class AgentTabs extends BaseTab{
-
-    public AgentTabs() {
-        driver.get(generateURL(ConfigurationFileLoader.getInstance()));
-    }
 
     public static final String  CSS_AGENT_HELP = ".navbar-main.page-header .header-help-link";
     public static final String  CSS_AGENT_SUMMARY_HELP = ".block-header .header-help-link";

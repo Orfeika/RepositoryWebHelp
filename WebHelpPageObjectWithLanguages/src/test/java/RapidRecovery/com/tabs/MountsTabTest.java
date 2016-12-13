@@ -6,7 +6,7 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class MountsTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public MountsTabTest(LocalizedLanguages language) {
         this.language = language;

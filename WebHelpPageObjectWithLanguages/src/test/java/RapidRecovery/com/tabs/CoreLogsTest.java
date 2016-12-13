@@ -6,7 +6,6 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class CoreLogsTest extends BaseTabTest {
-    private final LocalizedLanguages language;
 
     public CoreLogsTest(LocalizedLanguages language) {
         this.language = language;

@@ -2,10 +2,9 @@ package RapidRecovery.com.PageObject.tabs;
 
 import org.openqa.selenium.By;
 
-/**
- * Created by 1 on 11/21/2016.
- */
+
 public class BootCDTab extends BaseTab {
+
     public static final String CSS_MORE_DROPDOWN = "#coreNavigationMore";
     public static final String CSS_MORE_BOOT_CD=  "#coreNavigationMoreMenu [href*='BootCD']";
     public static final String CSS_HELP_BOOT_CD =   ".page-header  [data-onclick *= 'Help']";

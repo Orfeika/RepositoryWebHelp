@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class SettingsTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
 
     public SettingsTabTest(LocalizedLanguages language) {
         this.language = language;

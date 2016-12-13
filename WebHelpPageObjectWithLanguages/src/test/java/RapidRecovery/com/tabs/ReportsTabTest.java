@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class ReportsTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public ReportsTabTest(LocalizedLanguages language) {
         this.language = language;

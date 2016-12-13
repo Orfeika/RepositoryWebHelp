@@ -7,6 +7,11 @@ import org.openqa.selenium.By;
 
 
 public class BaseTab extends PageObject {
+    public BaseTab() {
+        driver.get(generateURL(ConfigurationFileLoader.getInstance()));
+
+    }
+
     ConfigurationFileLoader configurations;
     public static final String CSS_DIALOG_WINDOW_CLOSE= ".ui-icon-closeright";
     public static final String CSS_SUMMARY_HELP = ".header-help-link [role=button]";
@@ -56,11 +61,12 @@ public class BaseTab extends PageObject {
 
     public void changeLang(LocalizedLanguages languages ){
         waitTillProgress(CSS_OVERLAY,10,20);
-         driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
+        driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
         driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
         driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
         driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >"+ languages.getLanguageCss() +"> label")).click();
         driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
+        driver.navigate().refresh();
         driver.navigate().refresh();
     }
 

@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import static RapidRecovery.com.PageObject.tabs.BaseTab.CSS_SUMMARY_HELP;
 
 public class SystemInfoTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public SystemInfoTest(LocalizedLanguages language) {
         this.language = language;

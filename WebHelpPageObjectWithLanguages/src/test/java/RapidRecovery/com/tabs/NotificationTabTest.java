@@ -8,7 +8,7 @@ import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class NotificationTabTest extends BaseTabTest {
-    private final LocalizedLanguages language;
+
 
     public NotificationTabTest(LocalizedLanguages language) {
         this.language = language;

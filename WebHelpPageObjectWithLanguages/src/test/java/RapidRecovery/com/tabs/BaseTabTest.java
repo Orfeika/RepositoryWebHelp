@@ -18,7 +18,6 @@ public class BaseTabTest {
     WebHelpPage webHelpPage;
     WebDriver driver;
     ConfigurationFileLoader configurations;
-    PageObject pageObject;
     ArchivesTab archivesTab;
     CloudAccountsTab cloudTab;
     BootCDTab bootCDTab;
@@ -36,8 +35,7 @@ public class BaseTabTest {
     AgentTabs agentTabs;
     FileSearchTab fileSearchTab;
     protected LocalizedLanguages language;
-
-
+    PageObject pageObject;
 
 
     @BeforeClass
@@ -46,6 +44,9 @@ public class BaseTabTest {
         configurations = ConfigurationFileLoader.getInstance();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        pageObject  = new PageObject();
+        pageObject.changeLang(language);
+        webHelpPage = new WebHelpPage(language.getLanguageKey());
     }
 
 
