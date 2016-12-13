@@ -3,27 +3,43 @@ package RapidRecovery.com.tabs;
 import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.AgentTabs;
 import RapidRecovery.com.WebHelpPage;
+import RapidRecovery.com.util.ConfigurationFileLoader;
+import RapidRecovery.com.util.DriverManager;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static RapidRecovery.com.WebHelpPage.*;
 
 
 public class AgentTabsTest extends BaseTabTest {
 
-    private final LocalizedLanguages language;
 
-    public AgentTabsTest(LocalizedLanguages language) {
-        this.language = language;
+   public AgentTabsTest(LocalizedLanguages language) {
+      this.language = language;
+  }
+
+    @BeforeClass
+    public void beforeClass() {
+        driver = DriverManager.getInstance().createDriver();
+        configurations = ConfigurationFileLoader.getInstance();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        agentTabs = new AgentTabs();
+        agentTabs.changeLang(language);
     }
+
 
     @BeforeMethod
    public void beforeMethod(){
-        webHelpPage = new WebHelpPage(language.getLanguageKey());
-       agentTabs = new AgentTabs();
-       agentTabs.selectTheAgent();
-   }
 
-    @org.testng.annotations.Test
+        webHelpPage = new WebHelpPage(language.getLanguageKey());
+        agentTabs.selectTheAgent();
+    }
+
+    @Test
     public void agentSummaryTabTest() {
         agentTabs.openAgentTab(AgentTabs.CSS_AGENT_SUMMARY_TAB);
         agentTabs.checkWebHelp(AgentTabs.CSS_AGENT_SUMMARY_HELP, webHelpPage.getLocalizedText(TEXT_SUMMARY_TAB));

@@ -8,7 +8,7 @@ public class WebHelpPage {
     private Properties myProperties;
 
      public WebHelpPage(String language) {
-        final String propertiesFileName = "/" + language + "_localization.properties";
+        final String propertiesFileName = "/languages/" + language + "_localization.properties";
         myProperties = new Properties();
         try {
             myProperties.load(WebHelpPage.class.getResourceAsStream(propertiesFileName));
@@ -178,7 +178,7 @@ public class WebHelpPage {
     public static final String TEXT_AGENT_RECOVERY_POINTS =  "SummaryInformationProtectedMachines";
     public static final String TEXT_AGENT_SETTINGS =  "ConfiguringMachineSettings";
     public static final String TEXT_AGENT_SETTINGS_GENERAL = "ModifyingProtectedMachineSettings";
-    public static final String TEXT_AGENT_SETTINGS_NIGHTLY_JOBS = "CustomizingNightlyJobsForPMe";
+    public static final String TEXT_AGENT_SETTINGS_NIGHTLY_JOBS = "CustomizingNightlyJobsForPM";
     public  static final String TEXT_JOB_REPORT = "UnderstandingTheJobReport";
     public static final String TEXT_AGENT_LICENSE_DETAILS ="ViewingLicenseInformation";
     public  static final String TEXT_FAILURE_REPORT = "UnderstandingTheFailureReport";

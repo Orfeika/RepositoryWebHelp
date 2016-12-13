@@ -11,6 +11,10 @@ import org.openqa.selenium.interactions.Actions;
  */
 public class AgentTabs extends BaseTab{
 
+    public AgentTabs() {
+        driver.get(generateURL(ConfigurationFileLoader.getInstance()));
+    }
+
     public static final String  CSS_AGENT_HELP = ".navbar-main.page-header .header-help-link";
     public static final String  CSS_AGENT_SUMMARY_HELP = ".block-header .header-help-link";
     public static final String  CSS_AGENT_EVENTS_HELP = ".block-header .header-help-link";
@@ -31,7 +35,7 @@ public class AgentTabs extends BaseTab{
     public static final String  CSS_AGENT_MORE_DRPDWN = ".page-header > ul > li:last-child";
     public static final String CSS_AGENT_SYSTEM_INFO =  ".navbar-main.page-header .dropdown-menu [href*='SystemInfo']";
     public static final String CSS_AGENT_MOUNTS =  " .navbar-main.page-header .dropdown-menu  [href*='Mounts'] i ";
-    public static final String CSS_AGENT_RETENTION_POLICY =  ".navbar-main.page-header .dropdown-menu [href*='RetentionPolicyTab']";
+    public static final String CSS_AGENT_RETENTION_POLICY =  ".navbar-main.page-header .dropdown-menu [href*='RetentionPolicy']";
     public static final String CSS_AGENT_NOTIFICATIONS =  " .navbar-main.page-header .dropdown-menu [href*='EventsConfiguration']";
     public static final String CSS_AGENT_LOGS =  ".dropdown-menu [href*='ViewLog']";
     public static final String CSS_AGENT_LOCAL_MOUNTS_HELP =  ".blockInnerContainer .header-help-link";

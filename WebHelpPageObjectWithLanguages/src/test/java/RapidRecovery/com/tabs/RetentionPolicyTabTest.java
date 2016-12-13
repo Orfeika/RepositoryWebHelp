@@ -1,11 +1,17 @@
 package RapidRecovery.com.tabs;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.PageObject.tabs.RetentionPolicyTab;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class RetentionPolicyTabTest extends BaseTabTest {
+    private final LocalizedLanguages language;
+
+    public RetentionPolicyTabTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

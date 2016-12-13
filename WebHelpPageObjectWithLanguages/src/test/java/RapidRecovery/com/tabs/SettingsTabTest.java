@@ -1,5 +1,6 @@
 package RapidRecovery.com.tabs;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.PageObject.tabs.CoreHomeTab;
 import RapidRecovery.com.PageObject.tabs.SettingsTab;
@@ -8,6 +9,11 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class SettingsTabTest extends BaseTabTest {
+    private final LocalizedLanguages language;
+
+    public SettingsTabTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

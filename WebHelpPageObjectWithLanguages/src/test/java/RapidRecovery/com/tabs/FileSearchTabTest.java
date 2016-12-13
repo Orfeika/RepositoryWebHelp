@@ -1,4 +1,5 @@
 package RapidRecovery.com.tabs;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.PageObject.tabs.FileSearchTab;
 import RapidRecovery.com.WebHelpPage;
@@ -9,6 +10,11 @@ import org.testng.annotations.BeforeMethod;
  * Created by 1 on 12/8/2016.
  */
 public class FileSearchTabTest extends BaseTabTest{
+    private final LocalizedLanguages language;
+
+    public FileSearchTabTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

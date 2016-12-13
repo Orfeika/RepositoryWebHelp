@@ -1,4 +1,5 @@
 package RapidRecovery.com.tabs;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
@@ -6,12 +7,19 @@ import org.testng.annotations.BeforeMethod;
 import static RapidRecovery.com.PageObject.tabs.BaseTab.CSS_SUMMARY_HELP;
 
 public class SystemInfoTest extends BaseTabTest {
+    private final LocalizedLanguages language;
+
+    public SystemInfoTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {
         tab = new BaseTab();
         tab.openTab(BaseTab.Tabs.SystemInfoTab);
     }
+
+
 
     @org.testng.annotations.Test
     public void systemInfoHelp() {

@@ -3,7 +3,7 @@ package RapidRecovery.com.PageObject.enums;
 public enum LocalizedLanguages {
 
     Portuguese("Pt-Br", "li:nth-child(12)"),
-    China("Zn-Cn", "li:nth-child(1)"),
+    China("Zn-CN", "li:nth-child(1)"),
     French("fr","li:nth-child(7)"),
     German("de","li:nth-child(8)"),
     English("en-us","li:nth-child(3)"),

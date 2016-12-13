@@ -1,18 +1,35 @@
 package RapidRecovery.com.tabs;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.ArchivesTab;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.WebHelpPage;
+import RapidRecovery.com.util.ConfigurationFileLoader;
+import RapidRecovery.com.util.DriverManager;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class ArchivesTabTest extends BaseTabTest {
+    private LocalizedLanguages language;
 
+    public ArchivesTabTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
-
+    @BeforeClass
+    public void beforeClass() {
+        driver = DriverManager.getInstance().createDriver();
+        configurations = ConfigurationFileLoader.getInstance();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        archivesTab = new ArchivesTab();
+        archivesTab.changeLang(language);
+    }
     @BeforeMethod
     public void beforeMethod() {
-        archivesTab = new ArchivesTab();
         archivesTab.openTab(BaseTab.Tabs.ArchiveTab);
     }
 

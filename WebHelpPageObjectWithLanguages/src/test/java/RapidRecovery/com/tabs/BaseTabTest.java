@@ -1,6 +1,7 @@
 package RapidRecovery.com.tabs;
 
 import RapidRecovery.com.PageObject.PageObject;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.*;
 import RapidRecovery.com.WebHelpPage;
 import RapidRecovery.com.util.ConfigurationFileLoader;
@@ -14,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class BaseTabTest {
-    protected WebHelpPage webHelpPage;
+    WebHelpPage webHelpPage;
     WebDriver driver;
     ConfigurationFileLoader configurations;
     PageObject pageObject;
@@ -34,20 +35,17 @@ public class BaseTabTest {
     SettingsTab settingsTab;
     AgentTabs agentTabs;
     FileSearchTab fileSearchTab;
-
+    protected LocalizedLanguages language;
 
 
 
 
     @BeforeClass
     public void beforeClass() {
-
         driver = DriverManager.getInstance().createDriver();
         configurations = ConfigurationFileLoader.getInstance();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        pageObject = new PageObject();
-
     }
 
 
