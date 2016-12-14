@@ -7,14 +7,13 @@ import org.openqa.selenium.By;
 
 
 public class BaseTab extends PageObject {
-    public BaseTab() {
-        driver.get(generateURL(ConfigurationFileLoader.getInstance()));
 
-    }
 
     ConfigurationFileLoader configurations;
     public static final String CSS_DIALOG_WINDOW_CLOSE= ".ui-icon-closeright";
     public static final String CSS_SUMMARY_HELP = ".header-help-link [role=button]";
+
+
     public enum Tabs {
         ArchiveTab("Archives"),
         BootCDTab("BootCD"),

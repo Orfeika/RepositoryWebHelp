@@ -1,6 +1,9 @@
 package RapidRecovery.com;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Properties;
 
 public class WebHelpPage {
@@ -11,7 +14,12 @@ public class WebHelpPage {
         final String propertiesFileName = "/languages/" + language + "_localization.properties";
         myProperties = new Properties();
         try {
-            myProperties.load(WebHelpPage.class.getResourceAsStream(propertiesFileName));
+            InputStream inputStream= WebHelpPage.class.getResourceAsStream(propertiesFileName);
+            Reader reader = new InputStreamReader(inputStream, "UTF-8");
+            myProperties.load(reader);
+
+
+
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Can't get properties from " + propertiesFileName, e);

@@ -19,15 +19,7 @@ public class ArchivesTabTest extends BaseTabTest {
         this.language = language;
     }
 
-    @BeforeClass
-    public void beforeClass() {
-        driver = DriverManager.getInstance().createDriver();
-        configurations = ConfigurationFileLoader.getInstance();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        archivesTab = new ArchivesTab();
-        archivesTab.changeLang(language);
-    }
+
     @BeforeMethod
     public void beforeMethod() {
         webHelpPage = new WebHelpPage(language.getLanguageKey());

@@ -1,6 +1,7 @@
 package RapidRecovery.com.wizards;
 
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ArchiveWizard;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
@@ -10,6 +11,11 @@ import static RapidRecovery.com.PageObject.wizards.ArchiveWizard.*;
 
 
 public class ImportArchiveWizardTest extends BaseTestWizards {
+
+
+    public ImportArchiveWizardTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

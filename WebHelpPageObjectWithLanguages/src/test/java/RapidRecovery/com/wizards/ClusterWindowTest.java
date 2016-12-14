@@ -1,10 +1,17 @@
 package RapidRecovery.com.wizards;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 
 public class ClusterWindowTest extends BaseTestWizards {
+
+
+    public ClusterWindowTest(LocalizedLanguages language) {
+        this.language = language;
+    }
+
     @BeforeMethod
     public void beforeMethod() {
         protectMachineWizard = new ProtectMachineWizard();

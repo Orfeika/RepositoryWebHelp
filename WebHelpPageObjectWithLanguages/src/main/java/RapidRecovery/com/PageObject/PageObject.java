@@ -9,6 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.nio.charset.Charset;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -17,7 +18,7 @@ public class PageObject {
 
 
     protected WebDriver driver = DriverManager.getInstance().getDriver();
-    protected WebDriverWait wait ;
+    protected WebDriverWait wait;
     public static final String CSS_OVERLAY = "div .ui-widget-overlay";
     public static final String CSS_LOADING = "#loadingPanel";
 
@@ -25,39 +26,41 @@ public class PageObject {
         driver.get(generateURL(ConfigurationFileLoader.getInstance()));
     }
 
-    public String generateURL(ConfigurationFileLoader configurations){
+    public String generateURL(ConfigurationFileLoader configurations) {
 
         String coreIP = configurations.getInstance().getCoreIP();
         String login = configurations.getInstance().getCoreUser();
         String password = configurations.getInstance().getCorePassword();
-        String port =  configurations.getInstance().getCorePort();
+        String port = configurations.getInstance().getCorePort();
 
-        String myURL = "https://" + login + ":" + password + "@" + coreIP+":"+port + "/apprecovery/admin";
+        String myURL = "https://" + login + ":" + password + "@" + coreIP + ":" + port + "/apprecovery/admin";
         return myURL;
     }
-    public String generateURL(ConfigurationFileLoader configurations, String tabEnd){
+
+    public String generateURL(ConfigurationFileLoader configurations, String tabEnd) {
         String coreIP = configurations.getInstance().getCoreIP();
         String login = configurations.getInstance().getCoreUser();
         String password = configurations.getInstance().getCorePassword();
-        String port =  configurations.getInstance().getCorePort();
+        String port = configurations.getInstance().getCorePort();
 
-        String myURL = "https://" + login + ":" + password + "@" + coreIP+":"+port + "/apprecovery/admin/" + tabEnd;
+        String myURL = "https://" + login + ":" + password + "@" + coreIP + ":" + port + "/apprecovery/admin/" + tabEnd;
         return myURL;
     }
-    protected boolean checkQuestionMark(String headerName){
+
+    protected boolean checkQuestionMark(String headerName) {
         WebElement header = driver.findElement(By.cssSelector(WebHelpPage.CSS_WEBHELP_HEADER));
-
+        Charset.forName("UTF-8").encode(headerName);
         System.out.println("Web-help: " + header.getText());
-        if (header.getText().equals(headerName)){
+        if (header.getText().equals(headerName)) {
             driver.close();
-            return  true;
+            return true;
         }
         driver.close();
-        return  false;
+        return false;
     }
 
-    public void waitTillProgress(String cssElementToLoad,int attemptNumber, long timeOut ){
-        for (int i = 0 ; i < attemptNumber; i++) {
+    public void waitTillProgress(String cssElementToLoad, int attemptNumber, long timeOut) {
+        for (int i = 0; i < attemptNumber; i++) {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             try {
                 if (driver.findElement(By.cssSelector(cssElementToLoad)).isDisplayed() == true) {
@@ -65,7 +68,7 @@ public class PageObject {
                             .until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(cssElementToLoad)));
                     break;
                 }
-            }catch (NoSuchElementException | TimeoutException e){
+            } catch (NoSuchElementException | TimeoutException e) {
 
             }
 
@@ -82,12 +85,12 @@ public class PageObject {
                         .until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(cssElementToLoad)));
 
             }
-        }
-        catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
 
         }
     }
-    public void checkWebHelp(String cssToHelpLink,String webHelpText ) {
+
+    public void checkWebHelp(String cssToHelpLink, String webHelpText) {
         waitTillProgress(ProtectMachineWizard.CSS_LOADING);
         String winHandleBefore = driver.getWindowHandle();
         // Perform the click operation that opens new window
@@ -95,33 +98,33 @@ public class PageObject {
         // Switch to new window opened
         Set<String> windowHandles = driver.getWindowHandles();
         //Get active windows , while size of windowsHandles list  is equal or lover than 1.
-        while (windowHandles.size()<=1){
+        while (windowHandles.size() <= 1) {
             windowHandles = driver.getWindowHandles();
         }
-        for(String winHandle : windowHandles){
+        for (String winHandle : windowHandles) {
             if (!winHandle.equals(winHandleBefore)) {
                 driver.switchTo().window(winHandle);
             }
         }
         // Perform the actions on new window
-        if(checkQuestionMark(webHelpText)== false){
+        if (checkQuestionMark(webHelpText) == false) {
             driver.switchTo().window(winHandleBefore);
-            throw new AssertionError (" Text in link does not match with expected text" + "\n (" + webHelpText +")");
+            throw new AssertionError(" Text in link does not match with expected text" + "\n (" + webHelpText + ")");
         }
 /// Switch back to original browser (first window)
         driver.switchTo().window(winHandleBefore);
     }
-    public void changeLang(LocalizedLanguages languages ){
-        waitTillProgress(CSS_OVERLAY,10,20);
+
+    public void changeLang(LocalizedLanguages languages) {
+        waitTillProgress(CSS_OVERLAY, 10, 20);
         driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
         driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
         driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
-        driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >"+ languages.getLanguageCss() +"> label")).click();
+        driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >" + languages.getLanguageCss() + "> label")).click();
         driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
         driver.navigate().refresh();
         driver.navigate().refresh();
     }
-
 
 
 }

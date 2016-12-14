@@ -13,15 +13,9 @@ import java.security.SecureRandom;
  */
 public class RestoreWizard extends  BaseWizard{
     public static final String CSS_RESTORE_WIZARD_HEADER = "#restoreMachine";
-    @FindBy(css=CSS_RESTORE_WIZARD_HEADER)
-    WebElement restoreWizard;
-
     public static final String CSS_ELEMENT_MACHINES_GRID = "#restorationProtectedMachinesGrid .text-with-icons-container";
-
     public static final String CSS_ELEMENT_RPS_GRID =  "#gview_restorationRecoveryPointsGrid [aria-describedby='restorationRecoveryPointsGrid_Contents']";
     public static final String CSS_WIZARD_QUESTION_MARK = "#ui-dialog-titlebar-hlp1 > span";
-
-
     public static final String CSS_R_BUTTON_BOOT_CD = "#recoverUsingBootCD";
     public static final String CSS_CANCEL_BOOT_CD =  ".icon-link>span";
     public static final String CSS_ISO_PATH =  "#outputIsoFile";
@@ -30,24 +24,15 @@ public class RestoreWizard extends  BaseWizard{
     public static final String CSS_RECOVER_USING_BOOT_CD_CHECKBOX= "#recoverUsingBootCD";
     public static final String CSS_HAVE_BOOT_CD_CHECKBOX =  "#alredyHaveBootCD";
 
-
     // Mount Wizard
-
-
     public static final String CSS_RESTORE_MACHINE_DRDWN = "#restoreMachine .dellap-caret-down";
-    @FindBy(css=CSS_RESTORE_MACHINE_DRDWN)
-    WebElement restoreDropdown;
     public static final String CSS_MOUNT_RP = "#restoreMachine .dellap-mount";
-    @FindBy(css=CSS_MOUNT_RP)
-    WebElement mountWizard;
     public static final String CSS_ELEMENT_MACHINES_GRID_MOUNT = "#machineGrid [aria-describedby = 'machineGrid_DisplayName']";
     public static final String CSS_ELEMENT_RPS_GRID_MOUNT =  "#recoveryPointGrid [aria-describedby='recoveryPointGrid_Contents']";
 
 
     //Virtual Machine Export Wizard
     public static final String CSS_VM_Export = "#restoreMachine .dellap-export";
-    @FindBy(css=CSS_VM_Export)
-    WebElement vmExportWizard;
     public static final String CSS_ELEMENT_MACHINES_GRID_EXPORT = "#exportProtectedMachinesGrid .text-with-icons-container";
     public static final String CSS_ELEMENT_RPS_GRID_EXPORT =  "#exportRecoveryPointsGrid [aria-describedby='exportRecoveryPointsGrid_Contents']";
     public static final String CSS_EXPORT_WIZARD_DESTNATION_DRPDWN = "#dropdown-wrapper-recoverToVirtualMachine .dellap-caret-down";
@@ -58,6 +43,7 @@ public class RestoreWizard extends  BaseWizard{
     public static final String CSS_EXPORT_WIZARD_VOLUMES_SELECT_ALL = "#jqgh_exportVolumeMappingGrid_cb";
 
     public void launchRestoreWizard(){
+        WebElement restoreWizard = driver.findElement(By.cssSelector(CSS_RESTORE_WIZARD_HEADER));
         restoreWizard.click();
         waitTillProgress(ProtectMachineWizard.CSS_OVERLAY);
     }
@@ -96,7 +82,9 @@ public class RestoreWizard extends  BaseWizard{
         driver.findElement(By.cssSelector(CSS_BMR_KEY)).sendKeys(configurations.getInstance().getBmrKey());
     }
     public void launchVMExportWizard(){
+        WebElement restoreDropdown= driver.findElement(By.cssSelector(CSS_RESTORE_MACHINE_DRDWN));
         restoreDropdown.click();
+        WebElement vmExportWizard= driver.findElement(By.cssSelector(CSS_VM_Export));
         vmExportWizard.click();
         waitTillProgress(ProtectMachineWizard.CSS_OVERLAY);
     }
@@ -119,13 +107,16 @@ public class RestoreWizard extends  BaseWizard{
     }
 
     public void fillVMOptionsFields(){
+        WebElement vmLocation= driver.findElement(By.cssSelector(CSS_EXPORT_WIZARD_VM_LOCATION_FIELD));
         vmLocation.sendKeys(configurations.getInstance().getPathToFolderForVMWareExport());}
 
     //Mount Wizard
         public void launchMountWizard(){
-        restoreDropdown.click();
-        mountWizard.click();
-        waitTillProgress(ProtectMachineWizard.CSS_OVERLAY);
+            WebElement restoreDropdown= driver.findElement(By.cssSelector(CSS_RESTORE_MACHINE_DRDWN));
+            restoreDropdown.click();
+            WebElement mountWizard= driver.findElement(By.cssSelector(CSS_MOUNT_RP));
+            mountWizard.click();
+            waitTillProgress(ProtectMachineWizard.CSS_OVERLAY);
     }
 
     public void selectMachinesToMount(){

@@ -1,5 +1,6 @@
 package RapidRecovery.com.wizards;
 
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
@@ -8,6 +9,11 @@ import static RapidRecovery.com.PageObject.PageObject.CSS_LOADING;
 import static RapidRecovery.com.PageObject.wizards.BaseWizard.CSS_WIZARD_QUESTION_MARK;
 
 public class ProtectMachineWizardTest extends BaseTestWizards {
+
+
+    public ProtectMachineWizardTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

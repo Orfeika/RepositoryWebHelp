@@ -2,6 +2,7 @@ package RapidRecovery.com.wizards;
 
 
 import RapidRecovery.com.PageObject.PageObject;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
 
@@ -9,6 +10,11 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
+
+
+    public ProtectMultipleMachinesWizardTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {

@@ -1,4 +1,6 @@
 package RapidRecovery.com.wizards;
+
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ArchiveWizard;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;
@@ -9,9 +11,15 @@ import static RapidRecovery.com.PageObject.wizards.BaseWizard.CSS_WIZARD_QUESTIO
 public class ArchiveWizardTest extends BaseTestWizards {
 
 
+
+    public ArchiveWizardTest(LocalizedLanguages language) {
+        this.language = language;
+    }
+
     @BeforeMethod
     public void beforeMethod() {
         archiveWizard = new ArchiveWizard();
+
     }
 
     @org.testng.annotations.Test
@@ -65,6 +73,6 @@ public class ArchiveWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.waitTillProgress(CSS_LOADING,10,20);
         archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_ARCHIVE, ArchiveWizard.TEXT_DATE_RANGE_STEP);
+                WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_DATE_RANGE);
     }
 }

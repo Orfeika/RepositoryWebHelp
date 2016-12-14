@@ -43,8 +43,9 @@ public class BaseTabTest {
         driver = DriverManager.getInstance().createDriver();
         configurations = ConfigurationFileLoader.getInstance();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         pageObject  = new PageObject();
+        driver.get(pageObject.generateURL(configurations));
         pageObject.changeLang(language);
         webHelpPage = new WebHelpPage(language.getLanguageKey());
     }

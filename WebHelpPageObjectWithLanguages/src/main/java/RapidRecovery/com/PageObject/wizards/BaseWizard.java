@@ -6,27 +6,24 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Set;
 
 
 public class BaseWizard extends PageObject {
+
+
     ConfigurationFileLoader configurations;
     public static final String CSS_WIZARD_STEP_HEADER = "#wizardContentContainer h3";
     public static final String CSS_WIZARD_NEXT_BUTTON = "#btnWizardDefault";
     public static final String CSS_WIZARD_CLOSE_BUTTON = ".ui-dialog-icon.ui-icon-closeright";
-    @FindBy(css =CSS_WIZARD_CLOSE_BUTTON )
-    WebElement closeButton;
     public static final String CSS_CLOSE_WARNING= "#dialog .default";
-    @FindBy(css =CSS_CLOSE_WARNING )
-    WebElement closeWarning;
     public static final String CSS_OVERLAY = "div .ui-widget-overlay";
     public static final String  CSS_WIZARD_QUESTION_MARK ="#ui-dialog-titlebar-hlp1 > span";
 
-    @FindBy(css =CSS_WIZARD_NEXT_BUTTON )
-    WebElement nextButton;
+
+
 
     public void launchWizard(String cssLaunchWizard){
         WebElement webelement = driver.findElement(By.cssSelector(cssLaunchWizard));
@@ -48,8 +45,8 @@ public class BaseWizard extends PageObject {
         waitTillProgress(CSS_LOADING,10,20);
         String winHandleBefore = driver.getWindowHandle();
         WebElement stepHeader = driver.findElement(By.cssSelector(CSS_WIZARD_STEP_HEADER));
-        Assert.assertTrue(stepHeaderName.equals(stepHeader.getText()));
         System.out.println(stepHeader.getText() + " step");
+        Assert.assertTrue(stepHeaderName.equals(stepHeader.getText()));
         // Perform the click operation that opens new window
         driver.findElement(By.cssSelector(cssToHelpLink)).click();
         // Switch to new window opened
@@ -76,12 +73,15 @@ public class BaseWizard extends PageObject {
     public void proceedToNextStep(){
         waitTillProgress(CSS_OVERLAY);
         waitTillProgress(CSS_LOADING,10,30);
-        wait.until(ExpectedConditions.visibilityOf(nextButton));
+        WebElement nextButton= driver.findElement(By.cssSelector(CSS_WIZARD_NEXT_BUTTON));
+       // wait.until(ExpectedConditions.visibilityOf(nextButton));
         nextButton.click();
     }
 
     public void closeWizard(){
         try {
+            WebElement closeButton= driver.findElement(By.cssSelector(CSS_WIZARD_CLOSE_BUTTON));
+            WebElement closeWarning= driver.findElement(By.cssSelector(CSS_CLOSE_WARNING));
             closeButton.click();
             closeWarning.click();
         }catch (ElementNotVisibleException e){

@@ -1,4 +1,5 @@
 package RapidRecovery.com.wizards;
+import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.RestoreWizard;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.AfterMethod;
@@ -7,6 +8,9 @@ import static RapidRecovery.com.PageObject.PageObject.CSS_LOADING;
 
 public class RestoreWizardTest extends BaseTestWizards {
 
+    public RestoreWizardTest(LocalizedLanguages language) {
+        this.language = language;
+    }
 
     @BeforeMethod
     public void beforeMethod() {
