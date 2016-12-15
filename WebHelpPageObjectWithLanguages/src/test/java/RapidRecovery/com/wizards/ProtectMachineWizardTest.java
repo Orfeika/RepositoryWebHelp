@@ -18,6 +18,7 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         protectMachineWizard = new ProtectMachineWizard();
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

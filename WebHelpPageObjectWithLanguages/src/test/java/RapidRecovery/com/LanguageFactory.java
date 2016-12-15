@@ -10,7 +10,7 @@ public class LanguageFactory {
     @Factory(dataProvider ="languages")
     public Object [] createInstances(LocalizedLanguages language) {
         return new Object[]{
-            //  new AgentTabsTest(language),
+         //    new AgentTabsTest(language),
 //                new ArchivesTabTest(language),
 //                new BootCDTabTest(language),
 //                new CoreHomeTabTest(language),
@@ -27,9 +27,15 @@ public class LanguageFactory {
 //                new SettingsTabTest(language),
 //                new SystemInfoTest(language),
 //                new VirtualStandbyTabTest(language),
-                   // new ArchiveWizardTest(language),
-               // new ClusterWindowTest(language),
-               new DeployAgentSoftwareWizardTest(language)
+                    //new ArchiveWizardTest(language),
+             //   new ClusterWindowTest(language),
+                new DeployAgentSoftwareWizardTest(language),
+           //     new MountWizardTest(language),
+           //     new ProtectMultipleMachinesWizardTest(language),
+           //     new ReplicationWizardTest(language),
+           //     new RestoreWizardTest(language),
+            //    new VirtualMachinesExportWizardTest(language),
+             //   new ImportArchiveWizardTest(language)
 
 
 
@@ -40,12 +46,12 @@ public class LanguageFactory {
     @DataProvider(name="languages")
     public static Object[][] dataProvider() {
        return new  Object[][]  {
-               //{LocalizedLanguages.English},
-              // {LocalizedLanguages.French},
+            //  {LocalizedLanguages.English},
+               {LocalizedLanguages.French},
               {LocalizedLanguages.German},
                {LocalizedLanguages.Portuguese},
-           //  {LocalizedLanguages.China},
-           //   {LocalizedLanguages.Korean},
+//             {LocalizedLanguages.China},
+            {LocalizedLanguages.Korean},
                {LocalizedLanguages.Japan},
                {LocalizedLanguages.Spanish}
        };

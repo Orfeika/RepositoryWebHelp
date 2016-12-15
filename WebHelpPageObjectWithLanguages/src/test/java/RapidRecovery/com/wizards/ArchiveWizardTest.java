@@ -11,7 +11,6 @@ import static RapidRecovery.com.PageObject.wizards.BaseWizard.CSS_WIZARD_QUESTIO
 public class ArchiveWizardTest extends BaseTestWizards {
 
 
-
     public ArchiveWizardTest(LocalizedLanguages language) {
         this.language = language;
     }
@@ -19,6 +18,7 @@ public class ArchiveWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         archiveWizard = new ArchiveWizard();
+        language.printLanguageByKey();
 
     }
 

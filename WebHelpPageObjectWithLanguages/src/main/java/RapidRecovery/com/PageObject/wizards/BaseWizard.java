@@ -5,8 +5,8 @@ import RapidRecovery.com.util.ConfigurationFileLoader;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Set;
 
@@ -27,17 +27,13 @@ public class BaseWizard extends PageObject {
 
     public void launchWizard(String cssLaunchWizard){
         WebElement webelement = driver.findElement(By.cssSelector(cssLaunchWizard));
-        wait.until(ExpectedConditions.visibilityOf(webelement));
         webelement.click();
     }
 
     public void launchWizard(String cssWizardDropdown, String cssLaunchWizard){
-
         WebElement openDropdown = driver.findElement(By.cssSelector(cssWizardDropdown));
-        wait.until(ExpectedConditions.visibilityOf(openDropdown));
         openDropdown.click();
         WebElement launchWizard = driver.findElement(By.cssSelector(cssLaunchWizard));
-        wait.until(ExpectedConditions.visibilityOf(launchWizard));
         launchWizard.click();
     }
 
@@ -74,7 +70,6 @@ public class BaseWizard extends PageObject {
         waitTillProgress(CSS_OVERLAY);
         waitTillProgress(CSS_LOADING,10,30);
         WebElement nextButton= driver.findElement(By.cssSelector(CSS_WIZARD_NEXT_BUTTON));
-       // wait.until(ExpectedConditions.visibilityOf(nextButton));
         nextButton.click();
     }
 
@@ -84,7 +79,7 @@ public class BaseWizard extends PageObject {
             WebElement closeWarning= driver.findElement(By.cssSelector(CSS_CLOSE_WARNING));
             closeButton.click();
             closeWarning.click();
-        }catch (ElementNotVisibleException e){
+        }catch (ElementNotVisibleException| NoSuchElementException e){
 
         }
     }

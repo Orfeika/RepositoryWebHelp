@@ -44,7 +44,7 @@ public class BaseTestWizards {
         wait= new WebDriverWait(driver,20,10);
         driver.get(pageObject.generateURL(configurations));
         webHelpPage = new WebHelpPage(language.getLanguageKey());
-        pageObject.changeLang(language);
+        pageObject.changeLanguage(language);
         }
 
 

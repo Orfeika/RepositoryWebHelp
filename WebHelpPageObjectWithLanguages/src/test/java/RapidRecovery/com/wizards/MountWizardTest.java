@@ -15,6 +15,7 @@ public class MountWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         restoreWizard = new RestoreWizard();
+        language.printLanguageByKey();
     }
 
 

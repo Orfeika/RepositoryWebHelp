@@ -20,6 +20,7 @@ public class ImportArchiveWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         archiveWizard = new ArchiveWizard();
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

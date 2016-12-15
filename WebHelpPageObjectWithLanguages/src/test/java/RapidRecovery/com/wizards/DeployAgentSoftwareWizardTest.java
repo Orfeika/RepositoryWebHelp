@@ -18,13 +18,14 @@ public class DeployAgentSoftwareWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         protectMachineWizard = new ProtectMachineWizard();
+        language.printLanguageByKey();
     }
     
     @org.testng.annotations.Test
     public void connectionStep() {
         protectMachineWizard.launchDeployMachineWizard();
         protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD, WebHelpPage.TEXT_CONNECTION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD), webHelpPage.getLocalizedText(WebHelpPage.TEXT_CONNECTION));
     }
 
   @org.testng.annotations.Test
@@ -33,11 +34,12 @@ public class DeployAgentSoftwareWizardTest extends BaseTestWizards {
       protectMachineWizard.selectConnectionManually();
       protectMachineWizard.proceedToNextStep();
       protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-              WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD,WebHelpPage.TEXT_MACHINES);
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD),
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_MACHINES));
 
   }
 
-//
+
   @org.testng.annotations.Test
    public void adjustmentStep() {
       protectMachineWizard.launchDeployMachineWizard();
@@ -46,7 +48,7 @@ public class DeployAgentSoftwareWizardTest extends BaseTestWizards {
       protectMachineWizard.proceedToNextStep();
       protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
       protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-              WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD,WebHelpPage.TEXT_ADJUSTMENTS);
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_DEPLOY_AGENT_SOFTWARE_WIZARD), webHelpPage.getLocalizedText(WebHelpPage.TEXT_ADJUSTMENTS));
 
   }
 

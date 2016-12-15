@@ -17,6 +17,7 @@ public class ReplicationWizardTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         replicationWizard = new ReplicationWizard();
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

@@ -46,7 +46,7 @@ public class BaseTabTest {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         pageObject  = new PageObject();
         driver.get(pageObject.generateURL(configurations));
-        pageObject.changeLang(language);
+        pageObject.changeLanguage(language);
         webHelpPage = new WebHelpPage(language.getLanguageKey());
     }
 

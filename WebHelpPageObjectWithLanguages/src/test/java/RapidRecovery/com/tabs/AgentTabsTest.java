@@ -23,11 +23,13 @@ public class AgentTabsTest extends BaseTabTest {
    public void beforeMethod(){
         agentTabs= new AgentTabs();
         webHelpPage = new WebHelpPage(language.getLanguageKey());
+        language.printLanguageByKey();
         agentTabs.selectTheAgent();
     }
 
     @Test
     public void agentSummaryTabTest() {
+
         agentTabs.openAgentTab(AgentTabs.CSS_AGENT_SUMMARY_TAB);
         agentTabs.checkWebHelp(AgentTabs.CSS_AGENT_SUMMARY_HELP, webHelpPage.getLocalizedText(TEXT_SUMMARY_TAB));
     }

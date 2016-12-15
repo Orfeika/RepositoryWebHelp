@@ -115,15 +115,49 @@ public class PageObject {
         driver.switchTo().window(winHandleBefore);
     }
 
-    public void changeLang(LocalizedLanguages languages) {
-        waitTillProgress(CSS_OVERLAY, 10, 20);
-        driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
-        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
-        driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
-        driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >" + languages.getLanguageCss() + "> label")).click();
-        driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
-        driver.navigate().refresh();
-        driver.navigate().refresh();
+    private  void changeLang(LocalizedLanguages languages) {
+        try {
+            driver.navigate().refresh();
+            waitTillProgress(CSS_OVERLAY, 10, 30);
+
+            driver.findElement(By.cssSelector("a[href*='/apprecovery/admin/Core/Settings']")).click();
+            driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
+            driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
+            driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >" + languages.getLanguageCss() + "> label")).click();
+            driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
+            driver.navigate().refresh();
+        } catch (WebDriverException e) {
+            System.out.println(e);
+
+        }
+    }
+    private boolean  verifyLanguage(LocalizedLanguages languages){
+        String  languageName;
+        String currentLanguageName;
+        for (int i = 0;i<2;i++){
+            driver.navigate().refresh();
+             languageName =languages.getLanguageName();
+             currentLanguageName = driver.findElement(By.xpath
+                    ("//*[@id='generalCoreSettings' ] //div[contains(@data-url,'SetCurrentCulture')]")).getText();
+            System.out.println("CurrentLanguage"+ currentLanguageName);
+            System.out.println("Language that have to be "+ languageName);
+            if(languageName.equals(currentLanguageName) ==true){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
+
+    public  void changeLanguage(LocalizedLanguages languages) {
+        changeLang(languages);
+        while (verifyLanguage(languages)== false){
+            driver.navigate().refresh();
+            changeLang(languages);
+
+       }
     }
 
 

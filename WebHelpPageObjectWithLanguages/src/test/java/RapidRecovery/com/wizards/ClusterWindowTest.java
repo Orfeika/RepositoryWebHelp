@@ -15,6 +15,7 @@ public class ClusterWindowTest extends BaseTestWizards {
     @BeforeMethod
     public void beforeMethod() {
         protectMachineWizard = new ProtectMachineWizard();
+
     }
 
     @org.testng.annotations.Test
