@@ -17,7 +17,7 @@ public class WebHelpPage {
             InputStream inputStream= WebHelpPage.class.getResourceAsStream(propertiesFileName);
             Reader reader = new InputStreamReader(inputStream, "UTF-8");
             myProperties.load(reader);
-
+          ;
 
 
         } catch (IOException e) {
@@ -197,50 +197,48 @@ public class WebHelpPage {
 
 
 //Wizards steps names
-    //Archive Wizard
-    public static final String TEXT_LOCATION = "Location";
-    public static final String TEXT_ARCHIVE_TYPE = "Archive Type";
-     public static final String TEXT_OPTIONS = "Options";
-    public static final String TEXT_DATE_RANGE = "Date Range";
-    public static final String TEXT_IMPORT_TYPE = "Import Type";
-    public static final String TEXT_ARCHIVE_INFORMATION = "Archive Information";
-
-// Protect Machines Wizard
 
     public static final String TEXT_CONNECTION =  "Connection";
     public static final String TEXT_MACHINES = "Machines";
     public static final String TEXT_ADJUSTMENTS = "Adjustments";
     public static final String TEXT_WELCOME = "Welcome";
     public static final String TEXT_PROTECTION = "Protection";
-    public static final String TEXT_PROTECTION_VOLUMES = "Protection Volumes";
-    public static final String  TEXT_PROTECTION_SCHEDULE = "Protection Schedule";
+    public static final String TEXT_PROTECTION_VOLUMES = "ProtectionVolumes";
+    public static final String  TEXT_PROTECTION_SCHEDULE = "ProtectionSchedule";
     public static final String  TEXT_REPOSITORY =  "Repository";
-    public static final String  TEXT_REPOSITORY_CONFIGURATION ="Repository Configuration";
+    public static final String  TEXT_REPOSITORY_CONFIGURATION ="RepositoryConfiguration";
     public static final String  TEXT_ENCRYPTION ="Encryption";
-
     // Protect Multiple Machines Wizard
-    public static final String TEXT_SELECT_MACHINES = "Select Machines";
+    public static final String TEXT_SELECT_MACHINES = "SelectMachines";
     //Restore Wizard
     public static final String TEXT_SUMMARY = "Summary";
-    public static final String TEXT_RECOVERY_POINTS = "Recovery Points";
+    public static final String TEXT_RECOVERY_POINTS = "RecoveryPoints";
     public static final String TEXT_DESTINATION =  "Destination";
-    public static final String TEXT_VOLUME_MAPPING ="Volume Mapping";
-    public static final String TEXT_DISK_MAPPING ="Disk Mapping";
-    public static final String TEXT_DISMOUNT_DB ="Dismount Databases";
+    public static final String TEXT_VOLUME_MAPPING ="VolumeMapping";
+    public static final String TEXT_DISK_MAPPING ="DiskMapping";
+    public static final String TEXT_DISMOUNT_DB ="DismountDatabases";
     public static final String TEXT_WARNING ="Warnings";
-    public static final String TEXT_BOOT_CD ="Boot CD";
-    public static final String TEXT_DRIVE_INJECTION ="Driver Injection";
-    public static final String TEXT_ISO_IMAGE ="ISO Image";
+    public static final String TEXT_BOOT_CD ="BootCD";
+    public static final String TEXT_DRIVE_INJECTION ="DriverInjection";
+    public static final String TEXT_ISO_IMAGE ="ISOImage";
     //VM Export Wizard
-    public static final String TEXT_VM_EXPORT_TYPE ="Select VM Export Type";
-    public static final String TEXT_VM_OPTIONS ="Virtual Machine Options";
+    public static final String TEXT_VM_EXPORT_TYPE ="SelectVMExportType";
+    public static final String TEXT_VM_OPTIONS ="VirtualMachineOptions";
     public static final String TEXT_VOLUMES ="Volumes";
-    public static final String TEXT_MOUNT_OPTIONS = "Mount Options";
-    //Replication Wizard
+    public static final String TEXT_MOUNT_OPTIONS = "MountOptions";
+//Replication Wizard
 
-    public static final String TEXT_TARGET_CORE = "Target Core";
+    public static final String TEXT_TARGET_CORE = "TargetCore";
     public static final String TEXT_REQUEST ="Request";
-    public static final String TEXT_PROTECTED_MACHINES="Protected Machines";
-    public static final String  TEXT_SEED_DRIVE_LOCATION = "Seed Drive Location";
-    public static final String  TEXT_SEED_DRIVE_OPTIONS = "Seed Drive Options";
+    public static final String TEXT_PROTECTED_MACHINES="ProtectedMachines";
+    public static final String  TEXT_SEED_DRIVE_LOCATION = "SeedDriveLocation";
+    public static final String  TEXT_SEED_DRIVE_OPTIONS = "SeedDriveOptions";
+
+    public static final String TEXT_LOCATION = "Location";
+    public static final String TEXT_ARCHIVE_TYPE = "ArchiveType";
+    public static final String TEXT_OPTIONS = "Options";
+    public static final String TEXT_DATE_RANGE = "DateRange";
+    public static final String TEXT_IMPORT_TYPE = "ImportType";
+    public static final String TEXT_ARCHIVE_INFORMATION = "ArchiveInformation";
+  
 }
