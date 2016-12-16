@@ -20,6 +20,7 @@ public class FileSearchTabTest extends BaseTabTest{
     public void beforeMethod() {
         fileSearchTab = new FileSearchTab();
         fileSearchTab.openTab(BaseTab.Tabs.FileSearchTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

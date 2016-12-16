@@ -17,6 +17,7 @@ public class VirtualStandbyTabTest extends BaseTabTest {
     public void beforeMethod() {
         tab = new BaseTab();
         tab.openTab(VirtualStandbyTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

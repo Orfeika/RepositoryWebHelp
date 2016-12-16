@@ -18,6 +18,7 @@ public class SettingsTabTest extends BaseTabTest {
     public void beforeMethod() {
         settingsTab = new SettingsTab();
         settingsTab.openTab(BaseTab.Tabs.SettingsTab);
+        language.printLanguageByKey();
     }
   
     @org.testng.annotations.Test

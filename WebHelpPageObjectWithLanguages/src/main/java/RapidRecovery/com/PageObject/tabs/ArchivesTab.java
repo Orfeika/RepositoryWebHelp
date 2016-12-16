@@ -1,9 +1,7 @@
 package RapidRecovery.com.PageObject.tabs;
 
-import RapidRecovery.com.util.ConfigurationFileLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ArchivesTab extends BaseTab {
 
@@ -20,7 +18,6 @@ public class ArchivesTab extends BaseTab {
 
     public void openAttachArchiveWindow(){
         WebElement addButton = driver.findElement(By.cssSelector(ArchivesTab.CSS_ADD_ATTACHED_ARCHIVE));
-        wait.until(ExpectedConditions.visibilityOf(addButton));
         addButton.click();
     }
     public void openCheckArchiveWindow(){

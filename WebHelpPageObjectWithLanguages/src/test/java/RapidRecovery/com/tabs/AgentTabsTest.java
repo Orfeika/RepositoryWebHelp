@@ -22,6 +22,7 @@ public class AgentTabsTest extends BaseTabTest {
         webHelpPage = new WebHelpPage(language.getLanguageKey());
         language.printLanguageByKey();
         agentTabs.selectTheAgent();
+        language.printLanguageByKey();
     }
 
     @Test

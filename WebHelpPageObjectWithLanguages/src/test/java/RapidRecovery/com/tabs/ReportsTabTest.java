@@ -18,6 +18,7 @@ public class ReportsTabTest extends BaseTabTest {
     public void beforeMethod() {
         reportsTab = new ReportsTab();
         reportsTab.openTab(BaseTab.Tabs.ReportsTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

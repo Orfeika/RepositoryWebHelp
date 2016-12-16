@@ -15,6 +15,7 @@ public class EncryptionKeysTabTestTab extends BaseTabTest {
     public void beforeMethod() {
         encryptionKeyTab = new EncryptionKeyTab();
         encryptionKeyTab.openTab(BaseTab.Tabs.EncryptionKeyTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

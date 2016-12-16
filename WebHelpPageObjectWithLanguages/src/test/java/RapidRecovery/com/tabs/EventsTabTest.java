@@ -15,6 +15,7 @@ public class EventsTabTest extends BaseTabTest {
     public void beforeMethod() {
             tab = new BaseTab();
             tab.openTab(BaseTab.Tabs.EventsTab);
+        language.printLanguageByKey();
     }
 
 

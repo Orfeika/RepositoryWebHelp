@@ -18,6 +18,7 @@ public class ReplicationTabTest extends BaseTabTest {
     public void beforeMethod()
     {    replicationTab = new ReplicationTab();
         replicationTab.openTab(BaseTab.Tabs.ReplicationTab);
+        language.printLanguageByKey();
 
     }
 

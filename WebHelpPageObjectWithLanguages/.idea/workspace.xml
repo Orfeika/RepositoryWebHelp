@@ -26,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeployAgentSoftwareWizardTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/DeployAgentSoftwareWizardTest.java">
+      <file leaf-file-name="LocalizedLanguages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/enums/LocalizedLanguages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/PageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,51 +48,56 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ArchivesTab.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/ArchivesTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#1413#1414#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArchivesTabTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ArchivesTabTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MountWizardTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/MountWizardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProtectMachineWizardTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMachineWizardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VirtualMachinesExportWizardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/VirtualMachinesExportWizardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileSearchTabTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/FileSearchTabTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncryptionKeysTabTestTab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EncryptionKeysTabTestTab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebHelp.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebHelp.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -91,7 +106,7 @@
       <file leaf-file-name="RestoreWizardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/RestoreWizardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
+            <state relative-caret-position="3383">
               <caret line="206" column="72" selection-start-line="206" selection-start-column="72" selection-end-line="206" selection-end-column="72" />
               <folding />
             </state>
@@ -101,21 +116,9 @@
       <file leaf-file-name="ProtectMultipleMachinesWizardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMultipleMachinesWizardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="2159">
               <caret line="134" column="74" selection-start-line="134" selection-start-column="74" selection-end-line="134" selection-end-column="74" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanguageFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/LanguageFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-261">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +126,7 @@
       <file leaf-file-name="ReplicationWizardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ReplicationWizardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
+            <state relative-caret-position="782">
               <caret line="52" column="57" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="57" />
               <folding />
             </state>
@@ -156,14 +159,41 @@
         <option value="$PROJECT_DIR$/src/main/resources/languages/ko_localization.properties" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BootCDTest.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/ArchivesTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/AgentTabs.java" />
         <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/BootCDTab.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/languages/en-us_localization.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/BaseTab.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/ProtectMachineWizard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/RestoreWizard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/enums/LocalizedLanguages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BaseTabTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/BaseWizard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/BaseTestWizards.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/ArchiveWizard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchiveWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchiveWizardTest1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/WebHelpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ImportArchiveWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/MountWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMachineWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMultipleMachinesWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ReplicationWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/RestoreWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/VirtualMachinesExportWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/DeployAgentSoftwareWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/LanguageFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/ArchivesTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchivesWizardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/AgentTabsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ArchivesTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BootCDTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CloudAccountsTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreHomeTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreLogsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EncryptionKeysTabTestTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EventsTabTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreLogsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreHomeTabTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CloudAccountsTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/FileSearchTabTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/MountsTabTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/NotificationTabTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ReplicationTabTest.java" />
@@ -173,35 +203,8 @@
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SettingsTabTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SystemInfoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/VirtualStandbyTabTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/languages/en-us_localization.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/BaseTab.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/ProtectMachineWizard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/RestoreWizard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/enums/LocalizedLanguages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BaseTabTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/BaseWizard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/PageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/BaseTestWizards.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/ArchiveWizard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchiveWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchiveWizardTest1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/LanguageFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/WebHelpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/AgentTabsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BootCDTabTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ArchivesTabTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchivesWizardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ClusterWindowTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ImportArchiveWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/MountWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMachineWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMultipleMachinesWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ReplicationWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/RestoreWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/VirtualMachinesExportWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/DeployAgentSoftwareWizardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/FileSearchTabTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/PageObject.java" />
       </list>
     </option>
   </component>
@@ -221,10 +224,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-128" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -527,6 +530,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wizards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHelpPageObjectWithLanguages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHelpPageObjectWithLanguages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PageObject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tabs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1112,8 +1149,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-128" width="1936" height="1216" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4481434" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1123,7 +1160,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32380074" sideWeight="0.35607675" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16311301" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32564574" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32324323" sideWeight="0.5234541" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27557603" sideWeight="0.5234541" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2804428" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1657,7 +1694,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ReplicationTabTest.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="291" />
         </line-breakpoint>
@@ -1765,122 +1802,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/RepositoryTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#399#400#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/RetentionPolicyTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#412#413#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SettingsTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SystemInfoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#409#410#0" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreLogsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/VirtualStandbyTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#469#470#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/languages/en-us_localization.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/util/TestListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="2215" column="24" selection-start-line="2215" selection-start-column="24" selection-end-line="2215" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/languages/ja_localization.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/ArchivesTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/BootCDTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/BaseTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1953,17 +1874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/enums/LocalizedLanguages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -2010,185 +1920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/PageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="156" column="46" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/BaseWizard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BaseTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/AgentTabsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ArchivesTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BootCDTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CloudAccountsTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchivesWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ClusterWindowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/BaseTestWizards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ImportArchiveWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="67" column="74" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/MountWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMachineWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="138" column="74" selection-start-line="138" selection-start-column="74" selection-end-line="138" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMultipleMachinesWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="134" column="74" selection-start-line="134" selection-start-column="74" selection-end-line="134" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ReplicationWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/RestoreWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="206" column="72" selection-start-line="206" selection-start-column="72" selection-end-line="206" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/DeployAgentSoftwareWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/VirtualMachinesExportWizardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/FileSearchTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EncryptionKeysTabTestTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebHelp.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2207,8 +1938,301 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/LanguageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="385">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/wizards/BaseWizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ArchivesWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/BaseTestWizards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/AgentTabsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BaseTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/BootCDTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CloudAccountsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreHomeTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/CoreLogsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EncryptionKeysTabTestTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/EventsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/FileSearchTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/MountsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/NotificationTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ReplicationTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ReportsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/RepositoryTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/RetentionPolicyTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SettingsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/SystemInfoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/VirtualStandbyTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ClusterWindowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/DeployAgentSoftwareWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ImportArchiveWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="74" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/MountWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMachineWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ProtectMultipleMachinesWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="134" column="74" selection-start-line="134" selection-start-column="74" selection-end-line="134" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/ReplicationWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="52" column="57" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/RestoreWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="206" column="72" selection-start-line="206" selection-start-column="72" selection-end-line="206" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/wizards/VirtualMachinesExportWizardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/enums/LocalizedLanguages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/PageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RapidRecovery/com/PageObject/tabs/ArchivesTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RapidRecovery/com/tabs/ArchivesTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

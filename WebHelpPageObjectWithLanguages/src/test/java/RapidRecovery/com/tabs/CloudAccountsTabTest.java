@@ -16,6 +16,7 @@ public class CloudAccountsTabTest extends BaseTabTest {
     public void beforeMethod(){
         cloudTab = new CloudAccountsTab();
         cloudTab.openTab(BaseTab.Tabs.CloudsTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

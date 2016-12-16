@@ -19,6 +19,7 @@ public class RepositoryTabTest extends BaseTabTest {
     public void beforeMethod() {
         repositoryTab = new RepositoryTab();
         repositoryTab.openTab(BaseTab.Tabs.RepositoryTab);
+        language.printLanguageByKey();
     }
  
     @org.testng.annotations.Test

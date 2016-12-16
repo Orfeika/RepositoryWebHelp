@@ -24,8 +24,9 @@ public class ArchivesWizardTest extends BaseTestWizards {
     @org.testng.annotations.Test
     public void archiveTypeStep() {
         archiveWizard.launchArchiveWizard();
-        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_CREATE_ARCHIVE,
-                WebHelpPage.TEXT_ARCHIVE_TYPE);
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_ARCHIVE_TYPE));
 
     }
 
@@ -34,7 +35,8 @@ public class ArchivesWizardTest extends BaseTestWizards {
         archiveWizard.launchArchiveWizard();
         archiveWizard.proceedToNextStep();
         archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_LOCATION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_LOCATION));
     }
 
     @org.testng.annotations.Test
@@ -45,7 +47,8 @@ public class ArchivesWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.waitTillProgress(PageObject.CSS_LOADING,10,20);
         archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_MACHINES);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_MACHINES));
     }
     @org.testng.annotations.Test
     public void archiveOptionsStep() {

@@ -18,6 +18,7 @@ public class CoreHomeTabTest extends BaseTabTest {
     public void beforeMethod() {
         coreHomeTab = new CoreHomeTab();
         coreHomeTab.openHomePage();
+        language.printLanguageByKey();
 
     }
 

@@ -18,6 +18,7 @@ public class NotificationTabTest extends BaseTabTest {
     public void beforeMethod() {
         notificationsTab = new NotificationsTab();
         notificationsTab.openTab(BaseTab.Tabs.NotificationsTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

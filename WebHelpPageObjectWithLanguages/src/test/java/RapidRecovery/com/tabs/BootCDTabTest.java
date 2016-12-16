@@ -16,6 +16,7 @@ public class BootCDTabTest extends BaseTabTest {
     public void beforeMethod(){
         bootCDTab = new BootCDTab();
         bootCDTab.openTab(BaseTab.Tabs.BootCDTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

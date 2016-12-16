@@ -17,6 +17,7 @@ public class RetentionPolicyTabTest extends BaseTabTest {
     public void beforeMethod() {
         retentionPolicyTabTab = new RetentionPolicyTab();
         retentionPolicyTabTab.openTab(BaseTab.Tabs.RetentionPolicyTab);
+        language.printLanguageByKey();
     }
 
      @org.testng.annotations.Test

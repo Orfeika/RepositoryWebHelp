@@ -139,8 +139,8 @@ public class PageObject {
              languageName =languages.getLanguageName();
              currentLanguageName = driver.findElement(By.xpath
                     ("//*[@id='generalCoreSettings' ] //div[contains(@data-url,'SetCurrentCulture')]")).getText();
-            System.out.println("CurrentLanguage"+ currentLanguageName);
-            System.out.println("Language that have to be "+ languageName);
+            System.out.println("Current Language: "+ currentLanguageName);
+            System.out.println("Language that should be: "+ languageName);
             if(languageName.equals(currentLanguageName) ==true){
                 return true;
             }

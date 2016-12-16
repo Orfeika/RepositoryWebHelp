@@ -20,6 +20,8 @@ public class ArchivesTabTest extends BaseTabTest {
         webHelpPage = new WebHelpPage(language.getLanguageKey());
         archivesTab = new ArchivesTab();
         archivesTab.openTab(BaseTab.Tabs.ArchiveTab);
+        language.printLanguageByKey();
+
     }
 
 

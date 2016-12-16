@@ -42,14 +42,14 @@ public class LanguageFactory {
     @DataProvider(name="languages")
     public static Object[][] dataProvider() {
        return new  Object[][]  {
-              {LocalizedLanguages.English},
-               {LocalizedLanguages.French},
-              {LocalizedLanguages.German},
-               {LocalizedLanguages.Portuguese},
-            {LocalizedLanguages.China},
-            {LocalizedLanguages.Korean},
-               {LocalizedLanguages.Japan},
-               {LocalizedLanguages.Spanish}
+                {LocalizedLanguages.English},
+                {LocalizedLanguages.French},
+                {LocalizedLanguages.German},
+                {LocalizedLanguages.Portuguese},
+                {LocalizedLanguages.China},
+                {LocalizedLanguages.Korean},
+                {LocalizedLanguages.Japan},
+                {LocalizedLanguages.Spanish}
        };
 
     }

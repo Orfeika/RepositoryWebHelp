@@ -15,6 +15,7 @@ public class CoreLogsTest extends BaseTabTest {
     public void beforeMethod(){
         coreLogsTab = new CoreLogsTab();
         coreLogsTab.openTab(BaseTab.Tabs.CoreLogs);
+        language.printLanguageByKey();
     }
       @org.testng.annotations.Test
     public void coreLogsWebHelp() {

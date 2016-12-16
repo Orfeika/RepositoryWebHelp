@@ -16,6 +16,7 @@ public class MountsTabTest extends BaseTabTest {
     public void beforeMethod(){
         mountsTab = new MountsTab();
         mountsTab.openTab(BaseTab.Tabs.MountsTab);
+        language.printLanguageByKey();
     }
 
     @org.testng.annotations.Test

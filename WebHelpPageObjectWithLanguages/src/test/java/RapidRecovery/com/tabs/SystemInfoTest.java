@@ -17,6 +17,7 @@ public class SystemInfoTest extends BaseTabTest {
     public void beforeMethod() {
         tab = new BaseTab();
         tab.openTab(BaseTab.Tabs.SystemInfoTab);
+        language.printLanguageByKey();
     }
 
 
