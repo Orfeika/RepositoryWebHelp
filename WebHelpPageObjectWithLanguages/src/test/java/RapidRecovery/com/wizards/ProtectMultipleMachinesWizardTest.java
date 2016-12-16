@@ -25,7 +25,9 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
     @org.testng.annotations.Test
     public void welcomeStep() {
         protectMachineWizard.launchProtectMultipleMachinesWizard();
-        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD, WebHelpPage.TEXT_WELCOME);
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_MLT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_WELCOME));
 
 
     }
@@ -35,7 +37,8 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
         protectMachineWizard.launchProtectMultipleMachinesWizard();
         protectMachineWizard.selectAdvancedProtectMachinesWizard();
         protectMachineWizard.proceedToNextStep();
-        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD,WebHelpPage.TEXT_CONNECTION);
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_MLT_WIZARD)
+                ,webHelpPage.getLocalizedText(WebHelpPage.TEXT_CONNECTION));
 
     }
 
@@ -46,7 +49,8 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
      protectMachineWizard.proceedToNextStep();
      protectMachineWizard.selectConnectionManually();
      protectMachineWizard.proceedToNextStep();
-     protectMachineWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_MLT_WIZARD,WebHelpPage.TEXT_SELECT_MACHINES );
+     protectMachineWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+             webHelpPage.getLocalizedText( WebHelpPage.TEXT_PRT_MLT_WIZARD),webHelpPage.getLocalizedText(  WebHelpPage.TEXT_SELECT_MACHINES ));
 
  }
     @org.testng.annotations.Test
@@ -58,7 +62,9 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.enterMachinesInformation();
         protectMachineWizard.proceedToNextStep();
-        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_PRT_WIZARD_PROTECTION, WebHelpPage.TEXT_PROTECTION);
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_PRT_WIZARD_PROTECTION),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_PROTECTION));
     }
 
    @org.testng.annotations.Test
@@ -73,7 +79,8 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
        protectMachineWizard.setCustomProtection();
        protectMachineWizard.proceedToNextStep();
        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-               WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE,WebHelpPage.TEXT_PROTECTION_SCHEDULE);
+              webHelpPage.getLocalizedText( WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE),
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_PROTECTION_SCHEDULE));
 
    }
 
@@ -88,7 +95,8 @@ public class ProtectMultipleMachinesWizardTest extends BaseTestWizards {
           protectMachineWizard.proceedToNextStep();
           protectMachineWizard.proceedToNextStep();
           protectMachineWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                  WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY);
+                 webHelpPage.getLocalizedText( WebHelpPage.TEXT_CREATE_REPOSITORY),
+                  webHelpPage.getLocalizedText(WebHelpPage.TEXT_REPOSITORY));
 
 
       }
@@ -106,8 +114,9 @@ public void repositoryConfigurationStep() {
         protectMachineWizard.createNewRepository();
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(PageObject.CSS_LOADING,10,20);
-        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.
-                TEXT_CREATE_REPOSITORY, WebHelpPage.TEXT_REPOSITORY_CONFIGURATION);
+        protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_CREATE_REPOSITORY),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_REPOSITORY_CONFIGURATION));
     }
 
     @org.testng.annotations.Test
@@ -122,7 +131,8 @@ public void repositoryConfigurationStep() {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY, WebHelpPage.TEXT_ENCRYPTION);
+               webHelpPage.getLocalizedText( WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_ENCRYPTION));
 
     }
 

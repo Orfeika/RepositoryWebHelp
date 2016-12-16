@@ -24,7 +24,8 @@ public class ReplicationWizardTest extends BaseTestWizards {
     public void targetCoreStep() {
         replicationWizard.launchReplicationWizard();
         replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_REPL_TAB,WebHelpPage.TEXT_TARGET_CORE);
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_REPL_TAB)
+                ,webHelpPage.getLocalizedText( WebHelpPage.TEXT_TARGET_CORE));
     }
 
 
@@ -35,7 +36,9 @@ public class ReplicationWizardTest extends BaseTestWizards {
       replicationWizard.launchReplicationWizard();
       replicationWizard.specifyAExistingTargetCore();
       replicationWizard.proceedToNextStep();
-      replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_REPL_TAB,WebHelpPage.TEXT_REQUEST);
+      replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+              webHelpPage.getLocalizedText( WebHelpPage.TEXT_REPL_TAB),
+              webHelpPage.getLocalizedText( WebHelpPage.TEXT_REQUEST));
 
   }
 
@@ -46,8 +49,9 @@ public class ReplicationWizardTest extends BaseTestWizards {
        replicationWizard.proceedToNextStep();
        replicationWizard.specifyEmailAddress();
        replicationWizard.proceedToNextStep();
-       replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_REPL_TAB,
-               WebHelpPage.TEXT_PROTECTED_MACHINES);
+       replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+               webHelpPage.getLocalizedText( WebHelpPage.TEXT_REPL_TAB),
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_PROTECTED_MACHINES));
 
    }
 
@@ -63,7 +67,8 @@ public class ReplicationWizardTest extends BaseTestWizards {
        replicationWizard.useASeedDrive();
        replicationWizard.proceedToNextStep();
        replicationWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-               WebHelpPage.TEXT_SEED_DRIVE__REPL_WIZARD,WebHelpPage.TEXT_SEED_DRIVE_LOCATION);
+               webHelpPage.getLocalizedText( WebHelpPage.TEXT_SEED_DRIVE__REPL_WIZARD),
+                       webHelpPage.getLocalizedText( WebHelpPage.TEXT_SEED_DRIVE_LOCATION));
 
    }
 
@@ -80,7 +85,8 @@ public class ReplicationWizardTest extends BaseTestWizards {
         replicationWizard.specifySeedDriveLocation();
         replicationWizard.proceedToNextStep();
         replicationWizard. checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_SEED_DRIVE__REPL_WIZARD, WebHelpPage.TEXT_SEED_DRIVE_OPTIONS);
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_SEED_DRIVE__REPL_WIZARD),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_SEED_DRIVE_OPTIONS));
 
 
     }

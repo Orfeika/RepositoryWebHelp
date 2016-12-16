@@ -5,10 +5,7 @@ import RapidRecovery.com.PageObject.tabs.AgentTabs;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import static RapidRecovery.com.WebHelpPage.*;
-
-
 public class AgentTabsTest extends BaseTabTest {
 
 

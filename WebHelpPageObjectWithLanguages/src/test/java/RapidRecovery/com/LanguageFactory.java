@@ -11,15 +11,15 @@ public class LanguageFactory {
     @Factory(dataProvider ="languages")
     public Object [] createInstances(LocalizedLanguages language) {
         return new Object[]{
-               new AgentTabsTest(language),
-               new ArchivesTabTest(language),
+                new AgentTabsTest(language),
+                new ArchivesTabTest(language),
                 new BootCDTabTest(language),
                 new CoreHomeTabTest(language),
-               new CoreLogsTest(language),
-               new EncryptionKeysTabTestTab(language),
+                new CoreLogsTest(language),
+                new EncryptionKeysTabTestTab(language),
                 new EventsTabTest(language),
                 new FileSearchTabTest(language),
-               new MountsTabTest(language),
+                new MountsTabTest(language),
                 new NotificationTabTest(language),
                 new ReplicationTabTest(language),
                 new ReportsTabTest(language),
@@ -37,11 +37,6 @@ public class LanguageFactory {
                 new RestoreWizardTest(language),
                 new VirtualMachinesExportWizardTest(language),
                 new ImportArchiveWizardTest(language)
-
-
-
-
-
         };
     }
     @DataProvider(name="languages")

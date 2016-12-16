@@ -22,7 +22,7 @@ public class ClusterWindowTest extends BaseTestWizards {
     public void connectToClusterWindow() {
         protectMachineWizard.launchProtectClusterWindow();
         protectMachineWizard.checkWebHelp(ProtectMachineWizard.CSS_DIALOG_WINDOW_QUESTION_MARK
-                , WebHelpPage.TEXT_PRT_CLUSTER);
+                , webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_CLUSTER));
 
     }
 
@@ -32,7 +32,7 @@ public class ClusterWindowTest extends BaseTestWizards {
         protectMachineWizard.fillClusterFields();
         protectMachineWizard.connectToCluster();
         protectMachineWizard.checkWebHelp(ProtectMachineWizard.CSS_DIALOG_WINDOW_QUESTION_MARK
-                , WebHelpPage.TEXT_PRT_CLUSTER);
+                , webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_CLUSTER));
 
     }
 }

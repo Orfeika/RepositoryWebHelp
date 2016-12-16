@@ -26,8 +26,8 @@ public class ImportArchiveWizardTest extends BaseTestWizards {
     @org.testng.annotations.Test
     public void importTypeStep() {
         archiveWizard.launchImportArchiveWizard();
-        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_IMPORT_ARCHIVE,
-                WebHelpPage.TEXT_IMPORT_TYPE);
+        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK, webHelpPage.getLocalizedText(WebHelpPage.TEXT_IMPORT_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_IMPORT_TYPE));
 
     }
 
@@ -37,7 +37,7 @@ public class ImportArchiveWizardTest extends BaseTestWizards {
         archiveWizard.launchImportArchiveWizard();
         archiveWizard.proceedToNextStep();
         archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_IMPORT_ARCHIVE, WebHelpPage.TEXT_LOCATION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_IMPORT_ARCHIVE), webHelpPage.getLocalizedText(WebHelpPage.TEXT_LOCATION));
     }
 
 
@@ -49,7 +49,8 @@ public class ImportArchiveWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.waitTillProgress(CSS_LOADING,10,20);
         archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_IMPORT_ARCHIVE, WebHelpPage.TEXT_ARCHIVE_INFORMATION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_IMPORT_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_ARCHIVE_INFORMATION));
     }
 
 
@@ -63,7 +64,8 @@ public class ImportArchiveWizardTest extends BaseTestWizards {
         archiveWizard.deselectImportAllMachines();
         archiveWizard.proceedToNextStep();
         archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_IMPORT_ARCHIVE, WebHelpPage.TEXT_MACHINES);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_IMPORT_ARCHIVE)
+                , webHelpPage.getLocalizedText(WebHelpPage.TEXT_MACHINES));
 
     }
 

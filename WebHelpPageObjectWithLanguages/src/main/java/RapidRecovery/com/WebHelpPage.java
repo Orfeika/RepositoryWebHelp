@@ -28,7 +28,7 @@ public class WebHelpPage {
 
     public String getLocalizedText(String propertyName) {
 
-        return myProperties.getProperty(propertyName).replace(" ","");
+        return myProperties.getProperty(propertyName);
     }
 
     public static String getLocalizedText(String propertyName, String language) {

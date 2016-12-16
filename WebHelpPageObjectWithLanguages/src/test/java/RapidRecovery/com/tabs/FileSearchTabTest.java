@@ -24,7 +24,8 @@ public class FileSearchTabTest extends BaseTabTest{
 
     @org.testng.annotations.Test
     public void FileSearchResultWebHelp() {
-        fileSearchTab.checkWebHelp(FileSearchTab.CSS_SEARCH_RESULT_QUESTION_MARK, webHelpPage.getLocalizedText(WebHelpPage.TEXT_FILE_SEARCH));
+        fileSearchTab.checkWebHelp(FileSearchTab.CSS_SEARCH_RESULT_QUESTION_MARK,
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_FILE_SEARCH));
     }
 
 }

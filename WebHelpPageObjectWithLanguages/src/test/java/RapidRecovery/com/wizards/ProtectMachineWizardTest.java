@@ -25,7 +25,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
     public void welcomeStep() {
         protectMachineWizard.launchProtectMachineWizard();
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_WELCOME);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_WELCOME));
         protectMachineWizard.closeWizard();
     }
 
@@ -35,7 +36,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_CONNECTION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CONNECTION));
         protectMachineWizard.closeWizard();
 
     }
@@ -48,7 +50,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD_PROTECTION,WebHelpPage.TEXT_PROTECTION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_WIZARD_PROTECTION),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PROTECTION));
         protectMachineWizard.closeWizard();
 
     }
@@ -64,7 +67,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD,WebHelpPage.TEXT_PROTECTION_VOLUMES);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_WIZARD)
+                ,webHelpPage.getLocalizedText(WebHelpPage.TEXT_PROTECTION_VOLUMES));
         protectMachineWizard.closeWizard();
 
     }
@@ -80,7 +84,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE,WebHelpPage.TEXT_PROTECTION_SCHEDULE);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PRT_WIZARD_PROTECTION_SCHEDULE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_PROTECTION_SCHEDULE));
         protectMachineWizard.closeWizard();
 
     }
@@ -95,7 +100,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_REPOSITORY),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_REPOSITORY));
         protectMachineWizard.closeWizard();
 
     }
@@ -112,7 +118,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_REPOSITORY,WebHelpPage.TEXT_REPOSITORY_CONFIGURATION );
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_REPOSITORY),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_REPOSITORY_CONFIGURATION ));
         protectMachineWizard.closeWizard();
 
     }
@@ -128,7 +135,8 @@ public class ProtectMachineWizardTest extends BaseTestWizards {
         protectMachineWizard.proceedToNextStep();
         protectMachineWizard.waitTillProgress(CSS_LOADING,10,20);
         protectMachineWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY, WebHelpPage.TEXT_ENCRYPTION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_ADDING_ENCRYPTION_KEY),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_ENCRYPTION));
         protectMachineWizard.closeWizard();
 
 

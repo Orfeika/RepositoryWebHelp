@@ -57,7 +57,8 @@ public class ArchivesWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.waitTillProgress(BaseWizard.CSS_LOADING,10,20);
         archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_OPTIONS);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_OPTIONS));
     }
 
     @org.testng.annotations.Test
@@ -72,6 +73,7 @@ public class ArchivesWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.waitTillProgress(BaseWizard.CSS_LOADING,10,20);
         archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_DATE_RANGE);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_CREATE_ARCHIVE),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_DATE_RANGE));
     }
 }

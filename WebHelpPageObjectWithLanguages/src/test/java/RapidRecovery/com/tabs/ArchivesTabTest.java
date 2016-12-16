@@ -4,12 +4,7 @@ import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.tabs.ArchivesTab;
 import RapidRecovery.com.PageObject.tabs.BaseTab;
 import RapidRecovery.com.WebHelpPage;
-import RapidRecovery.com.util.ConfigurationFileLoader;
-import RapidRecovery.com.util.DriverManager;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
-import java.util.concurrent.TimeUnit;
 
 
 public class ArchivesTabTest extends BaseTabTest {
@@ -23,6 +18,7 @@ public class ArchivesTabTest extends BaseTabTest {
     @BeforeMethod
     public void beforeMethod() {
         webHelpPage = new WebHelpPage(language.getLanguageKey());
+        archivesTab = new ArchivesTab();
         archivesTab.openTab(BaseTab.Tabs.ArchiveTab);
     }
 
@@ -40,7 +36,8 @@ public class ArchivesTabTest extends BaseTabTest {
   @org.testng.annotations.Test
     public void addAttachedArchiveWebHelp() {
       archivesTab.openAttachArchiveWindow();
-      archivesTab.checkWebHelp(ArchivesTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.getLocalizedText(WebHelpPage.TEXT_ATTACH_ARCHIVE));
+      archivesTab.checkWebHelp(ArchivesTab.CSS_DIALOG_WINDOW_QUESTION_MARK,webHelpPage.
+              getLocalizedText(WebHelpPage.TEXT_ATTACH_ARCHIVE));
       archivesTab.closeDialogWindow();
 
   }

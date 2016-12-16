@@ -28,7 +28,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
    public void vmExportTypeStep(){
        restoreWizard.launchVMExportWizard();
        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-               WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD,WebHelpPage.TEXT_VM_EXPORT_TYPE);
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_VM_EXPORT_TYPE));
 
    }
 
@@ -38,7 +39,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
        restoreWizard.launchVMExportWizard();
         restoreWizard.proceedToNextStep();
        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-               WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD,WebHelpPage.TEXT_MACHINES);
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_MACHINES));
 
    }
 
@@ -50,7 +52,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
         restoreWizard.selectMachineToVmExport();
         restoreWizard.proceedToNextStep();
         restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD, WebHelpPage.TEXT_RECOVERY_POINTS);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_RECOVERY_POINTS));
     }
 
 
@@ -64,7 +67,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
         restoreWizard.proceedToNextStep();
         restoreWizard.waitTillProgress(PageObject.CSS_LOADING,10,20);
         restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD,WebHelpPage.TEXT_DESTINATION);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_DESTINATION));
 
     }
 
@@ -80,7 +84,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
         restoreWizard.selectExportTypeVMWare();
         restoreWizard.proceedToNextStep();
         restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD,WebHelpPage.TEXT_VM_OPTIONS);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VM_OPTIONS));
 
 
     }
@@ -98,7 +103,8 @@ public class VirtualMachinesExportWizardTest extends BaseTestWizards {
         restoreWizard.fillVMOptionsFields();
         restoreWizard.proceedToNextStep();
         restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD,WebHelpPage.TEXT_VOLUMES);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VIRTUAL_EXPORT_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_VOLUMES));
     }
 
 

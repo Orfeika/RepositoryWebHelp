@@ -23,7 +23,9 @@ public class RestoreWizardTest extends BaseTestWizards {
     @org.testng.annotations.Test
     public void machinesStep() {
         restoreWizard.launchRestoreWizard();
-        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK, WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_MACHINES);
+        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK, 
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD)
+                , webHelpPage.getLocalizedText( WebHelpPage.TEXT_MACHINES));
     }
 
     @org.testng.annotations.Test
@@ -31,7 +33,9 @@ public class RestoreWizardTest extends BaseTestWizards {
         restoreWizard.launchRestoreWizard();
         restoreWizard.selectMachineInGrid();
         restoreWizard.proceedToNextStep();
-        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_RECOVERY_POINTS);
+        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RECOVERY_POINTS));
 
     }
 
@@ -42,7 +46,9 @@ public class RestoreWizardTest extends BaseTestWizards {
           restoreWizard.proceedToNextStep();
           restoreWizard.selectRPinGrid();
           restoreWizard.proceedToNextStep();
-          restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_DESTINATION);
+          restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+                  webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+                  webHelpPage.getLocalizedText( WebHelpPage.TEXT_DESTINATION));
 
       }
 
@@ -55,7 +61,9 @@ public class RestoreWizardTest extends BaseTestWizards {
         restoreWizard.proceedToNextStep();
         restoreWizard.recoverToTargetMachine();
         restoreWizard.proceedToNextStep();
-        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_DISK_MAPPING);
+        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_DISK_MAPPING));
 
 
     }
@@ -68,7 +76,10 @@ public class RestoreWizardTest extends BaseTestWizards {
        restoreWizard.selectRPinGrid();
        restoreWizard.proceedToNextStep();
        restoreWizard.proceedToNextStep();
-       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_VOLUME_MAPPING);
+       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+               webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_VOLUME_MAPPING));
+
 
 
    }
@@ -83,7 +94,9 @@ public class RestoreWizardTest extends BaseTestWizards {
        restoreWizard.proceedToNextStep();
        restoreWizard.proceedToNextStep();
        restoreWizard.proceedToNextStep();
-       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_DISMOUNT_DB);
+       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+               webHelpPage.getLocalizedText( WebHelpPage.TEXT_DISMOUNT_DB));
 
    }
 
@@ -98,7 +111,9 @@ public class RestoreWizardTest extends BaseTestWizards {
       restoreWizard.proceedToNextStep();
       restoreWizard.proceedToNextStep();
       restoreWizard.proceedToNextStep();
-      restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_WARNING);
+      restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+              webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+              webHelpPage.getLocalizedText( WebHelpPage.TEXT_WARNING));
 
   }
 
@@ -113,7 +128,9 @@ public class RestoreWizardTest extends BaseTestWizards {
         restoreWizard.proceedToNextStep();
         restoreWizard.proceedToNextStep();
         restoreWizard.proceedToNextStep();
-        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_SUMMARY);
+        restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_RESTORE_WIZARD),
+                webHelpPage.getLocalizedText( WebHelpPage.TEXT_SUMMARY));
 
     }
 
@@ -126,7 +143,9 @@ public class RestoreWizardTest extends BaseTestWizards {
       restoreWizard.proceedToNextStep();
       restoreWizard.selectCreateBootCD();
       restoreWizard.proceedToNextStep();
-      restoreWizard. checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_BOOT_CD);
+      restoreWizard. checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_RESTORE_WIZARD),
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_BOOT_CD));
 
   }
 
@@ -142,7 +161,9 @@ public class RestoreWizardTest extends BaseTestWizards {
        restoreWizard.fillBootCDOutputPath();
        restoreWizard.proceedToNextStep();
        restoreWizard.waitTillProgress(CSS_LOADING,20,30);
-       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_DRIVE_INJECTION);
+       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_RESTORE_WIZARD),
+               webHelpPage.getLocalizedText(WebHelpPage.TEXT_DRIVE_INJECTION));
    }
 
 
@@ -161,7 +182,8 @@ public class RestoreWizardTest extends BaseTestWizards {
         restoreWizard.waitTillProgress(CSS_LOADING);
         restoreWizard.cancelBootCD();
         restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-                WebHelpPage.TEXT_RESTORE_WIZARD,WebHelpPage.TEXT_ISO_IMAGE);
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_RESTORE_WIZARD),
+                webHelpPage.getLocalizedText(WebHelpPage.TEXT_ISO_IMAGE));
     }
 
 
@@ -181,7 +203,8 @@ public class RestoreWizardTest extends BaseTestWizards {
       restoreWizard.cancelBootCD();
       restoreWizard.proceedToNextStep();
       restoreWizard.checkWebHelpWizard(RestoreWizard.CSS_WIZARD_QUESTION_MARK,
-              WebHelpPage.TEXT_RESTORE_WIZARD, WebHelpPage.TEXT_CONNECTION);
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_RESTORE_WIZARD),
+              webHelpPage.getLocalizedText(WebHelpPage.TEXT_CONNECTION));
 
   }
     @AfterMethod
