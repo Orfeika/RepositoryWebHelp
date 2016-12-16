@@ -1,6 +1,4 @@
 package RapidRecovery.com.wizards;
-
-
 import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
 import RapidRecovery.com.WebHelpPage;

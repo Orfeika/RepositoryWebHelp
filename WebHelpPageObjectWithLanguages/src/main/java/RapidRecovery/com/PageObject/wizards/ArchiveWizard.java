@@ -15,8 +15,7 @@ public class ArchiveWizard extends BaseWizard {
     public static final String CSS_ARCHIVE_LOCATION = "#localPath";
     public static final String CSS_IMPORT_ALL_ARCHIVES_CHECKBOX = " #isAllAgents";
     public static final String CSS_ATTACH_ARCHIVE_QUESTION_MARK=  " #ui-dialog-titlebar-hlp1 .ui-icon-help-left";
-    @FindBy(css =CSS_ATTACH_ARCHIVE_QUESTION_MARK)
-    WebElement questionMarkAttachArchive ;
+
 
 
 //Archive Wizard

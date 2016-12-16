@@ -27,7 +27,8 @@ public class WebHelpPage {
     }
 
     public String getLocalizedText(String propertyName) {
-        return myProperties.getProperty(propertyName);
+
+        return myProperties.getProperty(propertyName).replace(" ","");
     }
 
     public static String getLocalizedText(String propertyName, String language) {
@@ -240,5 +241,5 @@ public class WebHelpPage {
     public static final String TEXT_DATE_RANGE = "DateRange";
     public static final String TEXT_IMPORT_TYPE = "ImportType";
     public static final String TEXT_ARCHIVE_INFORMATION = "ArchiveInformation";
-  
+
 }

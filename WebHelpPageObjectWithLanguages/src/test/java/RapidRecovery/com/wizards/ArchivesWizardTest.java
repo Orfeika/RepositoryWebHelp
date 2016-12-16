@@ -1,17 +1,16 @@
 package RapidRecovery.com.wizards;
-
+import RapidRecovery.com.PageObject.PageObject;
 import RapidRecovery.com.PageObject.enums.LocalizedLanguages;
 import RapidRecovery.com.PageObject.wizards.ArchiveWizard;
-import RapidRecovery.com.PageObject.wizards.ProtectMachineWizard;
+import RapidRecovery.com.PageObject.wizards.BaseWizard;
 import RapidRecovery.com.WebHelpPage;
 import org.testng.annotations.BeforeMethod;
-import static RapidRecovery.com.PageObject.PageObject.CSS_LOADING;
-import static RapidRecovery.com.PageObject.wizards.BaseWizard.CSS_WIZARD_QUESTION_MARK;
-
-public class ArchiveWizardTest extends BaseTestWizards {
 
 
-    public ArchiveWizardTest(LocalizedLanguages language) {
+public class ArchivesWizardTest extends BaseTestWizards {
+
+
+    public ArchivesWizardTest(LocalizedLanguages language) {
         this.language = language;
     }
 
@@ -25,7 +24,7 @@ public class ArchiveWizardTest extends BaseTestWizards {
     @org.testng.annotations.Test
     public void archiveTypeStep() {
         archiveWizard.launchArchiveWizard();
-        archiveWizard.checkWebHelpWizard(CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_CREATE_ARCHIVE,
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,WebHelpPage.TEXT_CREATE_ARCHIVE,
                 WebHelpPage.TEXT_ARCHIVE_TYPE);
 
     }
@@ -34,7 +33,7 @@ public class ArchiveWizardTest extends BaseTestWizards {
     public void archiveLocationStep() {
         archiveWizard.launchArchiveWizard();
         archiveWizard.proceedToNextStep();
-        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
                 WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_LOCATION);
     }
 
@@ -44,8 +43,8 @@ public class ArchiveWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.fillArchiveLocationField();
         archiveWizard.proceedToNextStep();
-        archiveWizard.waitTillProgress(CSS_LOADING,10,20);
-        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+        archiveWizard.waitTillProgress(PageObject.CSS_LOADING,10,20);
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
                 WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_MACHINES);
     }
     @org.testng.annotations.Test
@@ -56,8 +55,8 @@ public class ArchiveWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.selectAllMachines();
         archiveWizard.proceedToNextStep();
-        archiveWizard.waitTillProgress(CSS_LOADING,10,20);
-        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+        archiveWizard.waitTillProgress(BaseWizard.CSS_LOADING,10,20);
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
                 WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_OPTIONS);
     }
 
@@ -69,10 +68,10 @@ public class ArchiveWizardTest extends BaseTestWizards {
         archiveWizard.proceedToNextStep();
         archiveWizard.selectAllMachines();
         archiveWizard.proceedToNextStep();
-        archiveWizard.waitTillProgress(CSS_LOADING,10,20);
+        archiveWizard.waitTillProgress(BaseWizard.CSS_LOADING,10,20);
         archiveWizard.proceedToNextStep();
-        archiveWizard.waitTillProgress(CSS_LOADING,10,20);
-        archiveWizard.checkWebHelpWizard(ProtectMachineWizard.CSS_WIZARD_QUESTION_MARK,
+        archiveWizard.waitTillProgress(BaseWizard.CSS_LOADING,10,20);
+        archiveWizard.checkWebHelpWizard(BaseWizard.CSS_WIZARD_QUESTION_MARK,
                 WebHelpPage.TEXT_CREATE_ARCHIVE, WebHelpPage.TEXT_DATE_RANGE);
     }
 }

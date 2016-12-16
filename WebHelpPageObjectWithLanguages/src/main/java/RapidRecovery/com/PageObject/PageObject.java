@@ -154,10 +154,13 @@ public class PageObject {
     public  void changeLanguage(LocalizedLanguages languages) {
         changeLang(languages);
         while (verifyLanguage(languages)== false){
-            driver.navigate().refresh();
-            changeLang(languages);
+            driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] ")).click();
+            driver.findElement(By.cssSelector("#dropdown-wrapper-langComboBox .dellap-caret-down")).click();
+            driver.findElement(By.cssSelector("#dropdown-menu-langComboBox > ul >" + languages.getLanguageCss() + "> label")).click();
+            driver.findElement(By.cssSelector(".editable-container[data-url*='SetCurrentCulture'] [type = 'submit']")).click();
 
-       }
+
+        }
     }
 
 
