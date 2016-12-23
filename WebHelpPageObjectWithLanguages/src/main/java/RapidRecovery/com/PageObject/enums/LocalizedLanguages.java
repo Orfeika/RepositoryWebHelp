@@ -2,7 +2,7 @@ package RapidRecovery.com.PageObject.enums;
 
 public enum LocalizedLanguages {
 
-    Portuguese("Pt-Br", "li:nth-child(12)","português (Brasil)"),
+    Portuguese("Pt-Br", "li:nth-child(12)","Português (Brasil)"),
     China("Zh-CN", "li:nth-child(1)","中文(中华人民共和国)"),
     French("fr","li:nth-child(7)","français (France)"),
     German("de","li:nth-child(8)","Deutsch (Österreich)"),

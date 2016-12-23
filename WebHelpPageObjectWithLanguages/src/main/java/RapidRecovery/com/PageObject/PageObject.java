@@ -141,7 +141,7 @@ public class PageObject {
                     ("//*[@id='generalCoreSettings' ] //div[contains(@data-url,'SetCurrentCulture')]")).getText();
             System.out.println("Current Language: "+ currentLanguageName);
             System.out.println("Language that should be: "+ languageName);
-            if(languageName.equals(currentLanguageName) ==true){
+            if(languageName.toLowerCase().equals(currentLanguageName.toLowerCase()) ==true){
                 return true;
             }
         }

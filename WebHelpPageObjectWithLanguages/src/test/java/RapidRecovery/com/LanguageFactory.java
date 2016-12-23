@@ -11,16 +11,16 @@ public class LanguageFactory {
     @Factory(dataProvider ="languages")
     public Object [] createInstances(LocalizedLanguages language) {
         return new Object[]{
-                new AgentTabsTest(language),
-                new ArchivesTabTest(language),
-                new BootCDTabTest(language),
-                new CoreHomeTabTest(language),
-                new CoreLogsTest(language),
-                new EncryptionKeysTabTestTab(language),
-                new EventsTabTest(language),
-                new FileSearchTabTest(language),
-                new MountsTabTest(language),
-                new NotificationTabTest(language),
+         //       new AgentTabsTest(language),
+           //     new ArchivesTabTest(language),
+              //  new BootCDTabTest(language),
+             //   new CoreHomeTabTest(language),
+             //   new CoreLogsTest(language),
+              //  new EncryptionKeysTabTestTab(language),
+               // new EventsTabTest(language),
+              //  new FileSearchTabTest(language),
+              //  new MountsTabTest(language),
+              //  new NotificationTabTest(language),
                 new ReplicationTabTest(language),
                 new ReportsTabTest(language),
                 new RepositoryTabTest(language),
@@ -28,15 +28,15 @@ public class LanguageFactory {
                 new SettingsTabTest(language),
                 new SystemInfoTest(language),
                 new VirtualStandbyTabTest(language),
-                new ArchivesWizardTest(language),
-                new ClusterWindowTest(language),
-                new DeployAgentSoftwareWizardTest(language),
-                new MountWizardTest(language),
+           //     new ArchivesWizardTest(language),
+           //     new ClusterWindowTest(language),
+              //  new DeployAgentSoftwareWizardTest(language),
+        //        new MountWizardTest(language),
                 new ProtectMultipleMachinesWizardTest(language),
                 new ReplicationWizardTest(language),
                 new RestoreWizardTest(language),
                 new VirtualMachinesExportWizardTest(language),
-                new ImportArchiveWizardTest(language)
+       //         new ImportArchiveWizardTest(language)
         };
     }
     @DataProvider(name="languages")

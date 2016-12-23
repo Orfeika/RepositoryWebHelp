@@ -19,10 +19,9 @@ public class AgentTabsTest extends BaseTabTest {
     @BeforeMethod
    public void beforeMethod(){
         agentTabs= new AgentTabs();
-        webHelpPage = new WebHelpPage(language.getLanguageKey());
         language.printLanguageByKey();
         agentTabs.selectTheAgent();
-        language.printLanguageByKey();
+
     }
 
     @Test

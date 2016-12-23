@@ -37,9 +37,9 @@ public class ProtectMachineWizard extends BaseWizard {
     public static final String CSS_SOURCE_DRPDWN = "#dropdown-wrapper-sourceType";
     public static final String CSS_SOURCE_MANUALLY ="#dropdown-menu-sourceType > ul > li:last-child";
     public static final String CSS_SOURCE_HYPER_V ="#dropdown-menu-sourceType > ul > li:nth-child(4)";
-    public static final String CSS_HYPER_V_HOSTNAME ="#hvHostName";
-    public static final String CSS_HYPER_V_USERNAME = "#hvUserName";
-    public static final String CSS_HYPER_V_PASSWORD = "#hvPassword";
+    public static final String CSS_HYPER_V_HOSTNAME ="#hvServerHostName";
+    public static final String CSS_HYPER_V_USERNAME = "#hvServerUserName";
+    public static final String CSS_HYPER_V_PASSWORD = "#hvServerPassword";
     public static final String CSS_CONNECT_CLUSTER_BUTTON =  "#connectClusterButton";
     //lOADING
     public static final String CSS_OVERLAY =" div .ui-widget-overlay";
@@ -98,7 +98,7 @@ public class ProtectMachineWizard extends BaseWizard {
 
 public void selectConnectionManually(){
     driver.findElement(By.cssSelector(CSS_PRT_MLTPM_WIZARD_CONNECTION_DRPDWN)).click();
-    driver.findElement(By.cssSelector(CSS_PRT_MLTPM_WIZARD_CON_DRPDWN_MANUALLY)).click();
+    driver.findElement(By.cssSelector(CSS_SOURCE_MANUALLY)).click();
 }
 
 public void enterMachinesInformation(){
@@ -124,6 +124,11 @@ public void enterMachinesInformation(){
         hvHostName.sendKeys(configurations.getInstance().getHyperVHost());
         hvUserName.sendKeys(configurations.getInstance().getHyperVLogin());
         hvPassword.sendKeys(configurations.getInstance().getHyperVPassword());
+        if(hvPassword.getAttribute("value").isEmpty()== true){
+            System.out.println("Text-" + hvPassword.getAttribute("value"));
+            hvPassword.clear();
+            hvPassword.sendKeys(configurations.getInstance().getHyperVPassword());
+        }
     }
 
     //ProtectCluster
